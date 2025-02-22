@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content:center;
+    align-items:center;
+    background-color:purple;
+}
+@font-face {
+    font-family:Headins;
+    src: url(Headins.otf);
+}
+h1,h2{
+    font-family:Headins;
+}
+.container{
+    width: 430px;
+    height: 500px;
+    background-color:white;
+    box-shadow:0 0 rgba(0,0,0,0.3);
+    border-radius:6px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+.container>h1{
+    position: absolute;
+    top:50px;
+    left:50%;
+    transform:translateX(-50%);
+    font-weight:900;
+}
+
+/* ============  INDICTOR ================= */
+.indictor{
+    width: 80%;
+    position: absolute;
+    /* border:2px solid gold; */
+    top: 120px;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.indictor .step{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 5px;
+    flex-direction:column;
+}
+.step>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border:2px solid black;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.step1>div{
+    background-color:#a975cb;
+    color:#fff;
+    transition:all 0.4s ease;
+}
+.step>span{
+    font-size:13px;
+    font-weight:600;
+    transition:all 0.4s ease;
+}
+.step1>span{
+    color:#a975cb;
+}
+.indictor>.line{
+    width: 30px;
+    height: 30px;
+    border-top:4px solid black;
+    transition:all 0.4s ease;
+    margin-top:5px;
+}
+
+#one:checked ~ .container .indictor .line1,
+#tow:checked ~ .container .indictor .line2,
+#three:checked ~ .container .indictor .line3{
+    border-color:#a975cb;
+}
+
+#one:checked ~ .container .step2 div,
+#tow:checked ~ .container .step3 div,
+#three:checked ~ .container .step4 div{
+    background-color:#a975cb;
+    color:#fff;
+}
+#one:checked ~ .container .step2 span,
+#tow:checked ~ .container .step3 span,
+#three:checked ~ .container .step4 span{
+    color:#a975cb;
+}
+/* ============ END  INDICTOR ================= */
+
+
+
+
+
+
+
+
+
+.panel{
+    width: 1720px;
+    height: 100%;
+    /* background-color:purple; */
+    position: relative;
+    top: 0;left: 0;
+    transition:all 0.4s ease;
+}
+.page1,.page2,.page3,.page4{
+    width: 430px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.page1{
+    left: 0;
+}
+.page2{
+    left: 25%;
+}
+.page3{
+    left: 50%;
+}
+.page4{
+    left: 75%;
+}
+
+.form{
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
+    height: 100%;
+    align-content:center;
+    justify-content: center;
+    padding-top:140px;
+}
+.from-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    height: 50px;
+    /* border:2px solid gold; */
+    margin:15px 0;
+}
+.from-group>input{
+    width: 100%;
+    height:100%;
+    border-radius: 5px;
+    padding:0 20px;
+    font-size:17px;
+    font-weight:500;
+    outline:none;
+    border:1px solid black;
+}
+.from-group>label{
+    position: absolute;
+    pointer-events:none;
+    top: 50%;
+    transform:translateY(-50%);
+    left: 20px;
+    background-color:white;
+    transition:all 0.3s ease;
+    font-size:18px;
+    font-weight:500;
+    padding:3px;
+    color:#999;
+}
+.from-group>input:focus ~ label,
+.from-group>input:valid ~ label{
+    top:0;
+    color:black;
+    transform:translateY(-50%) scale(0.85);
+}
+.form .btn-group{
+    width:80%;
+    height: 50px;
+    /* border:2px solid gold; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-group .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#a975cb;
+    color:#fff;
+    text-transform: capitalize;
+    width: 48%;
+    height: 100%;
+    padding:10px;
+    /* margin-top:20px; */
+    font-size:18px;
+    border-radius:7px;
+    cursor: pointer;
+    outline:none;
+    border:none;
+    box-shadow:0 0 8px #0000004d;
+}
+.btn-group .btn-f{
+    width: 100%;
+}
+.btn:active{
+    transform: scale(0.95);
+}
+.btn:hover{
+    opacity:0.8;
+}
+#one:checked ~ .container>.panel{
+    left: -430px;
+}
+#tow:checked ~ .container>.panel{
+    left: -860px;
+}
+#three:checked ~ .container>.panel{
+    left: -1290px;
+}
+#one,#tow,#three{
+    display: none;
+}

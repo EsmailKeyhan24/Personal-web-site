@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentDatabase</title>
+    <link rel="stylesheet" href="Framwork.css">
+    <link rel="stylesheet" href="master.css">
+</head>
+
+<body>
+    <section id="data_sutdent" class="wraper">
+        <section class="head_top col-100 p-m-3 p-md-3 text-center">
+            <h1>آکادمی انترنتی فرانت وب کلاس.</h1>
+        </section>
+        <label for="Nameteacher">اسم مدرس :</label>
+        <input type="text" id="Nameteacher" autofocus class="col-sm-20">
+        <section class="student_data col-100">
+            <form action="" class="col-100">
+                <input type="text" placeholder="نام دانشجو"
+                    class="col-m-100 col-sm-100 col-md-49 col-lg-24 mt-m-2 mt-sm-2">
+                <input type="text" placeholder="فامیلی...."
+                    class="col-m-100 col-sm-100 col-md-49 col-lg-24 mt-m-2 mt-sm-2">
+                <input type="text" placeholder="اسم دوره....."
+                    class="col-m-100 col-sm-100 col-md-49 col-lg-25 mt-m-2 mt-sm-2">
+                <input type="tel" placeholder="(+93)785788463" class="col-m-100 col-md-49 col-lg-25 mt-m-2 mt-sm-2">
+                <input type="numbers" placeholder="تایم..." class="col-m-100 col-md-49 col-lg-24 mt-m-2 mt-sm-2">
+                <input type="number" placeholder="تعداد پروژه" class="col-m-100 col-md-49 col-lg-25 mt-m-2 mt-sm-2" id="date">
+                <input type="date" placeholder="تاریخ ثبت نام" class="col-m-100 col-md-49 col-lg-25 mt-m-2 mt-sm-2">
+                <label for="img">عکس تانرا انتخاب نماید.</label>
+                <input type="file" id="img" onchange="_getIMg(event)">
+                <textarea  id="note" class="col-m-100 col-sm-100"></textarea>
+            </form>
+            <button id="bntSave" class="mt-m-2 mt-sm-2">ذخیره</button>
+        </section>
+    </section>
+    <!-- end of #data_student  -->
+    <section id="list" class="wraper mt-m-5 mt-sm-5">
+        <strong id="teacher"></strong>
+    </section>
+
+    <span class="message">لطفآ تمام بخش ها را پر نماید.</span>
+</body>
+<script src="App.js"></script>
+</html>

@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amlock</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assest/stylesheet/normalize.css">
+    <link rel="stylesheet" href="assest/stylesheet/master.css">
+    <link rel="stylesheet" href="assest/stylesheet/local.css">
+</head>
+<body>
+    <figure class="figure-load">
+        <img src="assest/img/me2.jpg" alt="">
+        <span onclick="_hidden(this)">✖</span>
+    </figure>
+    <!-- end of figure-load  -->
+
+
+
+    <section class="info bg-dark row px-5">
+        <div class="col-12 col-md-6 text-white">
+            <span class="text-light">Free Call</span>
+            <a href="tel:39785788463"><i class="bi bi-telephone-inbound-fill px-2"></i>785788463</a>
+        </div>
+        <div class="col-12 col-md-6 text-light d-flex justify-content-end">
+            <a href=""><i class="bi bi-facebook px-2"></i></a>
+            <a href=""><i class="bi bi-instagram px-2"></i></a>
+            <a href=""><i class="bi bi-linkedin px-3"></i></a>
+            <a href="https://t.me/Esmail_keyhan22 px-2"><i class="bi bi-telegram"></i></a>
+            <a href=""><i class="bi bi-github px-3"></i></a>
+        </div>
+    </section>
+    <section id="header_top">
+        <div class="header_top_body">
+            <nav id="nav_heade_top" class="px-3 d-lg-none">
+                <div class="col-12 menu-phone ">
+                    <section class="d-flex align-items-center logo-header">
+                        <span>🚞</span>
+                        <div>
+                            <strong>Directone</strong>
+                            <p>DIRECTORY AND LISTING</p>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="toggle" onclick="mytoggle()">
+                            <div>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span>menu</span>
+                        </div>
+                    </section>
+                    <ul id="navbar-header">
+                        <li><a href="">home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">listing</a></li>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">contact</a></li>
+                        <li><button>+ Add listing</button></li>
+                    </ul>
+                </div>
+            </nav> 
+            <!-- end of menu phone  -->
+
+
+            <nav id="nav_heade_largphone" class="container-fluid container-xl d-none d-lg-flex">
+                <div class="row col-12">
+                    <section class="col-3 d-flex text-white brandName-larg">
+                        <span>🚞</span>
+                        <div>
+                            <strong>Directone</strong>
+                            <p>DIRECTORY AND LISTING</p>
+                        </div>
+                    </section>
+                    <ul class="col-7">
+                        <li><a href="">home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">listing</a></li>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">contact</a></li>
+                    </ul>
+                    <section class="col-2 d-flex justify-content-center align-items-center btn-header_largPhone">
+                        <button>ADD LISTING</button>
+                    </section>
+                </div>
+            </nav>
+            <!-- end of menu-lagr  -->
+            <div class="row justify-content-center text-header">
+                <section class="col-12 col-sm-8 col-md-11 col-lg-6 ">
+                    <h1>Let's Explore Your Awesome City</h1>
+                    <p>Find great places to stay, eat, shop, or visit from local experts.</p>
+                </section>
+            </div> 
+            <!-- end of text-header  -->
+            <div class="row px-4 px-sm-5 justify-content-center header_form">
+                <form action="" class="col-12 col-sm-12 col-lg-7">
+                    <div class="row header_form_option">
+                        <input class="col-12 col-md-3" type="text" placeholder="What are you looking fro?" class="border border-dark">
+                        <input class="col-12 col-md-3" type="search" placeholder="Search Location" class="border border-dark">
+                        <select class="col-12 col-md-3" name="" id="">
+                            <option value="minrooz" selected disabled>All provice</option>
+                            <option value="ghazni">Ghazni</option>
+                            <option value="Kabul">Kabul</option>
+                            <option value="harat">Harat</option>
+                            <option value="mazar">Mazar Sharif</option>
+                            <option value="bamyan">Bamyan</option>
+                            <option value="logar">Logar</option>
+                            <option value="minrooz">Nimrooze</option>
+                            <option value="Paktia">Paktia</option>
+                            <option value="paktika">paktika</option>
+                            <option value="ghore">Ghore</option>
+                        </select>
+                        <input class="col-12 col-md-3" type="submit" value="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section> 
+    <!-- end of header_top  -->
+
+    <section class="services-container">
+        <section class="container-fluid container-xl py-5">
+            <div class="row px-2 px-sm-5 px-lg-0 services">
+                <section class="card col-12 col-md-4 col-lg-2  my-2 border-0">
+                    <div class="col-12">
+                        <span>🏡</span>
+                        <h2>Food & Drink</h2>
+                        <p> <span>103</span> LISTINGS</p>
+                    </div>
+                </section>
+                <section class="card col-12 col-md-4 col-lg-2 my-2 border-0">
+                   <div class="col-12">
+                        <span>🏍</span>
+                        <h2>Hotels</h2>
+                        <p> <span>40</span> LISTINGS</p>
+                   </div>
+                </section>
+                <section class="card col-12 col-md-4 col-lg-2 my-2 border-0">
+                   <div class="col-12">
+                    <span>🏨</span>
+                    <h2>Shoping</h2>
+                    <p><span>100</span>listing</p>
+                   </div>
+                </section>
+                <section class="card col-12 col-md-4 col-lg-2 my-2 border-0">
+                    <div class="col-12">
+                        <span>🚕</span>
+                        <h2>Beauty</h2>
+                        <p><span>36</span>LISTING</p>
+                    </div>
+                </section>
+                <section class="card col-12 col-md-4 col-lg-2 my-2 border-0">
+                    <div class="col-12">
+                        <span>🛺</span>
+                        <h2>Fitness</h2>
+                        <p><span>30</span>LISTING</p>
+                    </div>
+                </section>
+                <section class="card col-12 col-md-4 col-lg-2 my-2 border-0">
+                    <div class="col-12">
+                        <span>🚍</span>
+                        <h2>Bar & Club</h2>
+                        <p><span>12</span>LISTING</p>
+                    </div>
+                </section>
+                <section class="card col-12 col-md-4 col-lg-2 my-2 border-0">
+                    <div class="col-12">
+                        <span>🛴</span>
+                        <h2>Games</h2>
+                        <p><span>103</span>LISTING</p>
+                    </div>
+                </section>
+                <section class="card col-12 col-md-4 col-lg-2 my-2 border-0">
+                    <div class="col-12">
+                        <span>🏘</span>
+                        <h2>Places</h2>
+                        <p><span>40</span>LISTING</p>
+                    </div>
+                </section>
+                <section class="card col-12 col-md-4 col-lg-2 my-2 border-0">
+                   <div class="col-12">
+                    <span>🚲</span>
+                    <h2>Circus</h2>
+                    <p><span>100</span>listing</p>
+                   </div>
+                </section>
+                <section class="card col-12 col-md-4 col-lg-2 my-2 border-0">
+                    <div class="col-12">
+                        <span>🚉</span>
+                        <h2>Teater</h2>
+                        <p><span>36</span>listing</p>
+                       </div>
+                </section>
+                <section class="card col-12 col-md-4 col-lg-2 my-2 border-0">
+                    <div class="col-12">
+                        <span>🚆</span>
+                        <h2>Sports</h2>
+                        <p><span>30</span>listing</p>
+                       </div>
+                </section>
+                <section class="card col-12 col-md-4 col-lg-2 my-2 border-0">
+                    <div class="col-12">
+                        <span>🚂</span>
+                        <h2>Health</h2>
+                        <p><span>12</span>listing</p>
+                       </div>
+                </section>
+            </div>
+        </section>
+    </section>
+    <!-- end of services  -->
+
+
+
+
+
+    <section id="listing" class="py-5">
+        <div class="container text-center px-3 py-5">
+            <span>OUR LISTING</span>
+            <h2 class="py-3">Popular Listing</h2>
+            <div class="row px-0 g-4">
+                <div class="card col-12  col-md-6 col-lg-3 listing-card border-0">
+                    <section class="col-12 listing-card-item">
+                        <figure>
+                            <img src="assest/img/list-1.jpg" alt="" class="img-fluid">
+                        </figure>
+                        <span>🏡</span>
+                        <span class="d-flex justify-content-center pt-4">BEAUTY</span>
+                        <strong><a href="">Japanese Restaurant</a></strong>
+                        <p class="mt-2"> Suite 721 New York NY 10016</p>
+                        <p>+00 123 456 7890</p>
+                        <div class="border-0 border-top border-1 border-muted d-flex justify-content-between py-3 px-4 card-footers">
+                            <span class="text-muted">Review <small class="text-dark">5.0/5 ⭐(100)</small></span>
+                            <span><a href="">🤍</a></span>
+                        </div>
+                    </section>
+                </div>
+                <div class="card col-12  col-md-6 col-lg-3 listing-card border-0">
+                    <section class="col-12 listing-card-item">
+                        <figure>
+                            <img src="assest/img/list-2.jpg" alt="" class="img-fluid">
+                        </figure>
+                        <span>🏡</span>
+                        <span class="d-flex justify-content-center pt-4">BEAUTY</span>
+                        <strong><a href="">Japanese Restaurant</a></strong>
+                        <p class="mt-2"> Suite 721 New York NY 10016</p>
+                        <p>+00 123 456 7890</p>
+                        <div class="border-0 border-top border-1 border-muted d-flex justify-content-between py-3 px-3 card-footers">
+                            <span class="text-muted">Review <small class="text-dark">5.0/5 ⭐(100)</small></span>
+                            <span>🤍</span>
+                        </div>
+                    </section>
+                </div>
+                <div class="card col-12  col-md-6 col-lg-3 listing-card border-0">
+                    <section class="col-12 listing-card-item">
+                        <figure>
+                            <img src="assest/img/list-3.jpg" alt="" class="img-fluid">
+                        </figure>
+                        <span>🏡</span>
+                        <span class="d-flex justify-content-center pt-4">BEAUTY</span>
+                        <strong><a href="">Japanese Restaurant</a></strong>
+                        <p class="mt-2"> Suite 721 New York NY 10016</p>
+                        <p>+00 123 456 7890</p>
+                        <div class="border-0 border-top border-1 border-muted d-flex justify-content-between py-3 px-4 card-footers">
+                            <span class="text-muted">Review <small class="text-dark">5.0/5 ⭐(100)</small></span>
+                            <span><a href="">🤍</a></span>
+                        </div>
+                    </section>
+                </div>
+                <div class="card col-12  col-md-6 col-lg-3 listing-card border-0">
+                    <section class="col-12 listing-card-item">
+                        <figure>
+                            <img src="assest/img/list-4.jpg" alt="" class="img-fluid">
+                        </figure>
+                        <span>🏡</span>
+                        <span class="d-flex justify-content-center pt-4">BEAUTY</span>
+                        <strong><a href="">Japanese Restaurant</a></strong>
+                        <p class="mt-2"> Suite 721 New York NY 10016</p>
+                        <p>+00 123 456 7890</p>
+                        <div class="border-0 border-top border-1 border-muted d-flex justify-content-between py-3 px-4 card-footers">
+                            <span class="text-muted">Review <small class="text-dark">5.0/5 ⭐(100)</small></span>
+                            <span><a href="">🤍</a></span>
+                        </div>
+                    </section>
+                </div> 
+                <!-- end of cards  -->
+            </div>
+        </div>
+    </section> 
+    <!-- end of Popular listing  -->
+
+
+
+
+
+
+
+    <!-- <section class="banner">
+        <div class="d-flex justify-content-end px-3 px-sm-0">
+            <section class="col-12 col-sm-11  bg-info px-0">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores reiciendis ut et pariatur fuga blanditiis officia enim at ea esse. Eligendi illo ipsa iure nemo voluptatem itaque in eos sint!
+                Voluptates odio neque ducimus pariatur possimus corporis aliquid! Neque laborum aperiam, accusantium a optio distinctio tempore aliquid doloremque deserunt voluptate! Facilis molestiae deserunt illo animi non assumenda voluptate consequatur magni?
+                Rerum officia totam hic minima debitis, quidem a, dolorum voluptatem necessitatibus expedita eaque eum tenetur blanditiis itaque consequatur quasi, magni nostrum aliquam nobis maxime ducimus. Neque rem aliquid tenetur veniam?
+                Dolore voluptatem laudantium veniam, perspiciatis ratione est non iure ab laborum velit consectetur. Incidunt unde dignissimos libero dolorem ipsa, rerum possimus doloremque nobis odio commodi enim repudiandae. Porro, reiciendis beatae!
+                Deserunt maxime velit ab provident sunt aut. Alias voluptatum debitis, culpa saepe fuga commodi sit quae voluptates? Sequi sit repellat quas dolores, omnis quos ex laborum, repudiandae cumque modi deserunt!
+                Sit eius hic perspiciatis, animi, dolores facilis dolorum qui deleniti incidunt explicabo saepe. Amet possimus laborum ab aliquam fugit corrupti adipisci laudantium, laboriosam odit quos deserunt omnis similique qui consequatur?
+                Quas laborum quisquam quasi quos animi odit tempora nesciunt sapiente natus blanditiis modi labore, commodi nihil molestiae, delectus sunt soluta similique pariatur necessitatibus sit enim! Assumenda deleniti unde quasi architecto!
+                Saepe praesentium placeat neque! Illo sint voluptatum expedita rem commodi, consequatur ipsum fugiat tempore itaque, doloremque adipisci cum! Quo laboriosam quibusdam aperiam fuga doloribus laborum laudantium! Nobis facilis amet dolores.
+                Sed debitis laborum quibusdam expedita iste soluta autem fugit, quasi unde tempore nihil officiis a iusto necessitatibus qui deleniti! In illum minus sint vel soluta est dolorem aspernatur labore ad.
+                Id, vitae saepe! Nobis, aspernatur inventore fuga nostrum voluptas amet, consectetur tempore atque esse non rem ullam tempora ipsa sed fugiat sit quae, illo rerum iure ut quam praesentium soluta.
+            </section>
+        </div>
+    </section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- START OUR LISTING -->
+    <section id="listing" class="py-5">
+        <div class="container text-center px-3 py-5">
+            <span>LISTING</span>
+            <h2 class="py-3">Our Listing</h2>
+            <div class="row px-0 g-4">
+                <div class="card col-12  col-md-6 col-lg-3 listing-card border-0">
+                    <section class="col-12 listing-card-item">
+                        <figure>
+                            <img src="assest/img/list-5.jpg" alt="" class="img-fluid">
+                        </figure>
+                        <span>🏡</span>
+                        <span class="d-flex justify-content-center pt-4">BEAUTY</span>
+                        <strong><a href="">Japanese Restaurant</a></strong>
+                        <p class="mt-2"> Suite 721 New York NY 10016</p>
+                        <p>+00 123 456 7890</p>
+                        <div class="border-0 border-top border-1 border-muted d-flex justify-content-between py-3 px-4 card-footers">
+                            <span class="text-muted">Review <small class="text-dark">5.0/5 ⭐(100)</small></span>
+                            <span><a href="">🤍</a></span>
+                        </div>
+                    </section>
+                </div>
+                <div class="card col-12  col-md-6 col-lg-3 listing-card border-0">
+                    <section class="col-12 listing-card-item">
+                        <figure>
+                            <img src="assest/img/list-6.jpg" alt="" class="img-fluid">
+                        </figure>
+                        <span>🏡</span>
+                        <span class="d-flex justify-content-center pt-4">BEAUTY</span>
+                        <strong><a href="">Japanese Restaurant</a></strong>
+                        <p class="mt-2"> Suite 721 New York NY 10016</p>
+                        <p>+00 123 456 7890</p>
+                        <div class="border-0 border-top border-1 border-muted d-flex justify-content-between py-3 px-3 card-footers">
+                            <span class="text-muted">Review <small class="text-dark">5.0/5 ⭐(100)</small></span>
+                            <span>🤍</span>
+                        </div>
+                    </section>
+                </div>
+                <div class="card col-12  col-md-6 col-lg-3 listing-card border-0">
+                    <section class="col-12 listing-card-item">
+                        <figure>
+                            <img src="assest/img/list-7.jpg" alt="" class="img-fluid">
+                        </figure>
+                        <span>🏡</span>
+                        <span class="d-flex justify-content-center pt-4">BEAUTY</span>
+                        <strong><a href="">Japanese Restaurant</a></strong>
+                        <p class="mt-2"> Suite 721 New York NY 10016</p>
+                        <p>+00 123 456 7890</p>
+                        <div class="border-0 border-top border-1 border-muted d-flex justify-content-between py-3 px-4 card-footers">
+                            <span class="text-muted">Review <small class="text-dark">5.0/5 ⭐(100)</small></span>
+                            <span><a href="">🤍</a></span>
+                        </div>
+                    </section>
+                </div>
+                <div class="card col-12  col-md-6 col-lg-3 listing-card border-0">
+                    <section class="col-12 listing-card-item">
+                        <figure>
+                            <img src="assest/img/list-8.jpg" alt="" class="img-fluid">
+                        </figure>
+                        <span>🏡</span>
+                        <span class="d-flex justify-content-center pt-4">BEAUTY</span>
+                        <strong><a href="">Japanese Restaurant</a></strong>
+                        <p class="mt-2"> Suite 721 New York NY 10016</p>
+                        <p>+00 123 456 7890</p>
+                        <div class="border-0 border-top border-1 border-muted d-flex justify-content-between py-3 px-4 card-footers">
+                            <span class="text-muted">Review <small class="text-dark">5.0/5 ⭐(100)</small></span>
+                            <span><a href="">🤍</a></span>
+                        </div>
+                    </section>
+                </div> 
+                <div class="card col-12  col-md-6 col-lg-3 listing-card border-0">
+                    <section class="col-12 listing-card-item">
+                        <figure>
+                            <img src="assest/img/list-9.jpg" alt="" class="img-fluid">
+                        </figure>
+                        <span>🏡</span>
+                        <span class="d-flex justify-content-center pt-4">BEAUTY</span>
+                        <strong><a href="">Japanese Restaurant</a></strong>
+                        <p class="mt-2"> Suite 721 New York NY 10016</p>
+                        <p>+00 123 456 7890</p>
+                        <div class="border-0 border-top border-1 border-muted d-flex justify-content-between py-3 px-4 card-footers">
+                            <span class="text-muted">Review <small class="text-dark">5.0/5 ⭐(100)</small></span>
+                            <span><a href="">🤍</a></span>
+                        </div>
+                    </section>
+                </div>
+                <div class="card col-12  col-md-6 col-lg-3 listing-card border-0">
+                    <section class="col-12 listing-card-item">
+                        <figure>
+                            <img src="assest/img/list-10.jpg" alt="" class="img-fluid">
+                        </figure>
+                        <span>🏡</span>
+                        <span class="d-flex justify-content-center pt-4">BEAUTY</span>
+                        <strong><a href="">Japanese Restaurant</a></strong>
+                        <p class="mt-2"> Suite 721 New York NY 10016</p>
+                        <p>+00 123 456 7890</p>
+                        <div class="border-0 border-top border-1 border-muted d-flex justify-content-between py-3 px-4 card-footers">
+                            <span class="text-muted">Review <small class="text-dark">5.0/5 ⭐(100)</small></span>
+                            <span><a href="">🤍</a></span>
+                        </div>
+                    </section>
+                </div>
+                <div class="card col-12  col-md-6 col-lg-3 listing-card border-0">
+                    <section class="col-12 listing-card-item">
+                        <figure>
+                            <img src="assest/img/list-11.jpg" alt="" class="img-fluid">
+                        </figure>
+                        <span>🏡</span>
+                        <span class="d-flex justify-content-center pt-4">BEAUTY</span>
+                        <strong><a href="">Japanese Restaurant</a></strong>
+                        <p class="mt-2"> Suite 721 New York NY 10016</p>
+                        <p>+00 123 456 7890</p>
+                        <div class="border-0 border-top border-1 border-muted d-flex justify-content-between py-3 px-4 card-footers">
+                            <span class="text-muted">Review <small class="text-dark">5.0/5 ⭐(100)</small></span>
+                            <span><a href="">🤍</a></span>
+                        </div>
+                    </section>
+                </div>
+                <div class="card col-12  col-md-6 col-lg-3 listing-card border-0">
+                    <section class="col-12 listing-card-item">
+                        <figure>
+                            <img src="assest/img/list-12.jpg" alt="" class="img-fluid">
+                        </figure>
+                        <span>🏡</span>
+                        <span class="d-flex justify-content-center pt-4">BEAUTY</span>
+                        <strong><a href="">Japanese Restaurant</a></strong>
+                        <p class="mt-2"> Suite 721 New York NY 10016</p>
+                        <p>+00 123 456 7890</p>
+                        <div class="border-0 border-top border-1 border-muted d-flex justify-content-between py-3 px-4 card-footers">
+                            <span class="text-muted">Review <small class="text-dark">5.0/5 ⭐(100)</small></span>
+                            <span><a href="">🤍</a></span>
+                        </div>
+                    </section>
+                </div>
+                <!-- end of cards  -->
+            </div>
+        </div>
+    </section> 
+    <!-- END OF OUR LISTING  -->
+
+
+
+
+     <!-- START View  -->
+     <section id="view" class="">
+            <div class="container-fluid container-xl">
+                <div class="row px-2 pe-0 view-cards px-lg-0">
+                    <section class="bg-warning d-none d-md-flex col-md-5"></section>
+                    <section class="col-12 col-md-7 row align-content-start pt-4 ps-md-5 view-cards-text">
+                        <span class="mt-5">WELCOME TO DIRECTONE</span>
+                        <h2 class="mt-3 mb-4">Directone A Directory & Listing</h2>
+                        <p>
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                        </p>
+                        <p >A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <div class="row g-1 view-cards-small pe-0 py-3">
+                            <section class="card col-12 col-md-6 col-lg-3 pe-0">
+                                <div class="col-12">
+                                    <span class="w-100">50</span>
+                                    <p>YEARS OF EXPERIENCED</p>
+                                </div>
+                            </section>
+                            <section class="card col-12 col-md-6 col-lg-3">
+                                <div class="col-12 py-5">
+                                    <span>210K+</span>
+                                    <p>TOTAL LISTING</p>
+                                </div>
+                            </section>
+                            <section class="card col-12 col-md-6 col-lg-3 ">
+                                <div class="col-12 py-5">
+                                    <span>450</span>
+                                    <p>COMPANY STAF</p>
+                                </div>
+                            </section>
+                            <section class="card col-12 col-md-6 col-lg-3 ">
+                                <div class="col-12 py-5">
+                                    <span>100</span>
+                                    <p>HAPPY PEOPLE</p>
+                                </div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </div>
+     </section>
+     <!-- end of #view -->
+
+
+
+
+
+
+     <section id="people">
+        <div class="container-fluid container-xl py-5 text-center px-3 px-md-2">
+            <span>TESTIMONIAL</span>
+            <h2 class="pt-3 pb-5">Happy People</h2>
+            <div class="row py-4 g-2 ps-1 pb-5">
+                <section class="card col-12 col-sm-6 col-md-4  people-cards">
+                    <div class="col-12">
+                        <span>✍</span>
+                        <section class="col-12 ps-4 pe-5 info-people-text">
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        </section>
+                        <section class="col-12  ps-4 pe-5 people-img d-flex">
+                            <div class="col-5 col-lg-4 col-xl-3">
+                                <figure>
+                                    <img src="assest/img/me.jpg" alt="ismail keyhan">
+                                </figure>
+                            </div>
+                            <div class="col-7 col-lg-8 col-xl-8 people-img-text">
+                                <strong class="w-100">Roger Scott</strong>
+                                <p>Web Devloper</p>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <section class="card col-12 col-sm-6 col-md-4  people-cards">
+                    <div class="col-12">
+                        <span>✍</span>
+                        <section class="col-12 ps-4 pe-5 info-people-text">
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        </section>
+                        <section class="col-12  ps-4 pe-5 people-img d-flex">
+                            <div class="col-5 col-lg-4 col-xl-3">
+                                <figure>
+                                    <img src="assest/img/me2.jpg" alt="ismail keyhan">
+                                </figure>
+                            </div>
+                            <div class="col-7 col-lg-8 col-xl-9 people-img-text">
+                                <strong class="w-100">Roger Scott</strong>
+                                <p>Web Devloper</p>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <section class="card col-12 col-sm-6 col-md-4  people-cards">
+                    <div class="col-12">
+                        <span>✍</span>
+                        <section class="col-12 ps-4 pe-5 info-people-text">
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        </section>
+                        <section class="col-12  ps-4 pe-5 people-img d-flex">
+                            <div class="col-5 col-lg-4 col-xl-3">
+                                <figure>
+                                    <img src="assest/img/me3.jpg" alt="ismail keyhan">
+                                </figure>
+                            </div>
+                            <div class="col-7 col-lg-8 col-xl-9 people-img-text">
+                                <strong class="w-100">Roger Scott</strong>
+                                <p>Web Devloper</p>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+     </section>
+     <!-- people cards  -->
+
+
+     <div class="container-fluid container-xl px-2 py-5">
+        <div class="row g-1 justify-content-center card-srvices py-5">
+            <section class="col-12 col-md-3">
+                <div class="col-12 card-srvices-items py-5 text-center">
+                    <span class="">🛒</span>
+                    <h2 class="py-3 px-5 mx-3 mx-xl-5">1. Choose A Category</h2>
+                    <p class="px-3 px-md-3 px-xl-5">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                </div>
+            </section>
+            <section class="col-12 col-md-3">
+                <div class="col-12 card-srvices-items py-5 text-center">
+                    <span class="">🛒</span>
+                    <h2 class="py-3 px-5  mx-3 mx-xl-4">2. Find What you want</h2>
+                    <p class="px-3 px-md-3 px-xl-5">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                </div>
+            </section>
+            <section class="col-12 col-md-3">
+                <div class="col-12 card-srvices-items py-5 text-center">
+                    <span class="">🛒</span>
+                    <h2 class="py-3 px-5  mx-3 mx-xl-4">3. Select The Best Place</h2>
+                    <p class="px-3 px-md-3 px-xl-5">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                </div>
+            </section>
+            <section class="col-12 col-md-3">
+                <div class="col-12 card-srvices-items py-5 text-center">
+                    <span class="">🛒</span>
+                    <h2 class="py-3 px-5  mx-3 mx-xl-5">2. Explore The Place</h2>
+                    <p class="px-3 px-md-3 px-xl-5">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                </div>
+            </section>
+        </div>
+     </div>
+     <!-- end of card-srvices  -->
+
+
+
+     <!-- strat Our Blog  -->
+     <section id="OurBlog" class="mt-5 py-5">
+        <div class="container-fluid container-xl text-center py-5 px-3 px-md-0">
+            <span>OUR BLOG</span>
+            <h2 class="mt-3 mb-5">Recent Blog</h2>
+            <div class="row g-2 justify-content-between">
+                <section class="card col-12 col-md-3 OurBlog-card border-0">
+                    <div class="col-12 col-md-11">
+                        <figure>
+                            <img src="assest/img/image_1.jpg" alt="" class="img-fluid">
+                            <div class="d-flex align-content-center">
+                                <figure class="col-2">
+                                    <img src="assest/img/me.jpg" alt="">
+                                </figure>
+                                <strong class="col-8 text-muted">ismail keyhan</strong>
+                                <span class="col-2 pt-2"><a href="">🤍</a></span>
+                            </div>
+                            <a href="#"></a>
+                        </figure>
+                        <div class="body-card">
+                            <div class="text-comment my-4">
+                                <span>DEC. 05, 2020</span><a href="#">3 COMMENTS</a>
+                            </div>
+                            <h3>
+                                <a href="">Explore The Best Restaurant in New York</a>
+                            </h3>
+                            <p>
+                                A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="card col-12 col-md-3 OurBlog-card border-0">
+                    <div class="col-12 col-md-11">
+                        <figure>
+                            <img src="assest/img/image_2.jpg" alt="" class="img-fluid">
+                            <div class="d-flex align-content-center">
+                                <figure class="col-2">
+                                    <img src="assest/img/me.jpg" alt="">
+                                </figure>
+                                <strong class="col-8 text-muted">ismail keyhan</strong>
+                                <span class="col-2 pt-2"><a href="">🤍</a></span>
+                            </div>
+                            <a href="#"></a>
+                        </figure>
+                        <div class="body-card">
+                            <div class="text-comment my-4">
+                                <span>DEC. 05, 2020</span><a href="#">3 COMMENTS</a>
+                            </div>
+                            <h3>
+                                <a href="">Explore The Best Restaurant in New York</a>
+                            </h3>
+                            <p>
+                                A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="card col-12 col-md-3 OurBlog-card border-0">
+                    <div class="col-12 col-md-11">
+                        <figure>
+                            <img src="assest/img/image_1.jpg" alt="" class="img-fluid">
+                            <div class="d-flex align-content-center">
+                                <figure class="col-2">
+                                    <img src="assest/img/me.jpg" alt="">
+                                </figure>
+                                <strong class="col-8 text-muted">ismail keyhan</strong>
+                                <span class="col-2 pt-2"><a href="">🤍</a></span>
+                            </div>
+                            <a href="#"></a>
+                        </figure>
+                        <div class="body-card">
+                            <div class="text-comment my-4">
+                                <span>DEC. 05, 2020</span><a href="#">3 COMMENTS</a>
+                            </div>
+                            <h3>
+                                <a href="">Explore The Best Restaurant in New York</a>
+                            </h3>
+                            <p>
+                                A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="card col-12 col-md-3 OurBlog-card border-0">
+                    <div class="col-12 col-md-11">
+                        <figure>
+                            <img src="assest/img/image_4.jpg" alt="" class="img-fluid">
+                            <div class="d-flex align-content-center">
+                                <figure class="col-2">
+                                    <img src="assest/img/me.jpg" alt="">
+                                </figure>
+                                <strong class="col-8 text-muted">ismail keyhan</strong>
+                                <span class="col-2 pt-2"><a href="">🤍</a></span>
+                            </div>
+                            <a href="#"></a>
+                        </figure>
+                        <div class="body-card">
+                            <div class="text-comment my-4">
+                                <span>DEC. 05, 2020</span><a href="#">3 COMMENTS</a>
+                            </div>
+                            <h3>
+                                <a href="">Explore The Best Restaurant in New York</a>
+                            </h3>
+                            <p>
+                                A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+     </section>
+
+     <!--******* end of Our Blog *** -->
+     <!-- *********************************************** -->
+
+
+
+
+
+     <footer id="footer" class="py-4">
+        <section class="container-fluid container-xl py-5 mt-2">
+            <ul class="row px-0">
+                <li class="col-12 col-md-6 col-lg-3  px-0 footer-items">
+                    <section class="footer-textLogo">
+                        <h1><a href="">Directone</a></h1>
+                        <p><a href="">DIRECTORY AND LISTING</a></p>
+                    </section>
+                    <p class="pt-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                    <section class="footer-social d-flex">
+                        <span><a href=""><i class="bi bi-facebook"></i></a></span>
+                        <span><a href=""><i class="bi bi-instagram"></i></a></span>
+                        <span><a href="https://t.me/Esmail_keyhan22"><i class="bi bi-telegram"></i></a></span>
+                    </section>
+                </li>
+                <li class="col-12 col-md-6 col-lg-2 footer-items" data-aos="fade-up" data-aos-anchor-placement="bottom-center">
+                    <h3 class="mb-5">Explore</h3>
+                    <a href="">about us</a>
+                    <a href="">account</a>
+                    <a href="">listing</a>
+                    <a href="">Pricing Packages</a>
+                    <a href="">Pricing Packages</a>
+                </li>
+                <li class="col-12 col-md-6 col-lg-2 footer-items">
+                    <h3 class="mb-5">Quick Links</h3>
+                    <a href="">Contact Us</a>
+                    <a href="">Terms & Conditions</a>
+                    <a href="">Privacy</a>
+                    <a href="">Feedbacks</a>
+                </li>
+                <li class="col-12 col-md-6 col-lg-2 footer-items">
+                    <h3 class="mb-5">Categories</h3>
+                    <a href="">Food & Drinks</a>
+                    <a href="">Hotels</a>
+                    <a href="">Shopping</a>
+                    <a href="">Beauty</a>
+                    <a href="">Fitness</a>
+                    <a href="">Bar & Club</a>
+                </li>
+                <li class="col-12 col-md-6 col-lg-3 footer-items">
+                    <h3 class="mb-5">Have a Questions?</h3>
+                    <div class="footer-items-contact d-flex">
+                        <span >🕹</span>
+                        <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+                    </div>
+                    
+                    <div class="footer-items-contact">
+                        <span><i class="bi bi-telephone-inbound-fill"></i></span>
+                        <a href="tel:785788463">(+93)785788463</a>
+                    </div>
+                   <div class="footer-items-contact">
+                        <span><i class="bi bi-telegram"></i></span>
+                        <a href="https://t.me/Esmail_keyhan22">Esmailkeyhan22@gmail.com</a>
+                   </div>
+                </li>
+            </ul>
+        </section>
+     </footer>
+     <div class="textBy">
+        <p>Copyright ©2024 All rights reserved | This template is made with  by <strong><a href="https//www.FronWeb.com">ismail keyhan</a></strong> </p>
+     </div>
+</body>
+<script src="assest/JS/master.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</script>
+</html>

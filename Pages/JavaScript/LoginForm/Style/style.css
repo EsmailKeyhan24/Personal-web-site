@@ -1,0 +1,209 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#333;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 50%;
+    height: 70vh;
+    background-color:#222;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+.container>.bg{
+    width: 50%;
+    height: 100%;
+    background-color:orange;
+    position: absolute;
+    top: 0;
+    border-top-right-radius:80%;
+    border-bottom-right-radius:30%;
+    animation-duration:.4s;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count:1;
+    display: flex;
+    align-items: center;
+    
+}
+@keyframes bgchange1 {
+    0%{
+        width: 50%;
+    }
+   50%{
+        width: 100%;
+        border-radius:0;
+        border-top-left-radius:80%;
+        border-bottom-left-radius:30%;
+   }
+    100%{
+        border-radius:0;
+        right: 0;
+        width: 50%;
+        border-top-left-radius:80%;
+        border-bottom-left-radius:30%;
+    }
+}
+@keyframes Bbgchange2 {
+    0%{
+        width: 50%;
+        right: 0;
+            border-top-left-radius:80%;
+            border-bottom-left-radius:30%;
+    }
+    50%{
+        width: 100%;
+        right: 0;
+        border-top-right-radius:80%;
+        border-bottom-right-radius:30%;
+    }
+    100%{
+        width: 50%;
+        left:0;
+        border-top-right-radius:80%;
+        border-bottom-right-radius:30%;
+    }
+}
+
+.container>.bg>figure{
+    width: 90%;
+    height:70%;
+    /* background-color:purple; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container>.bg>figure>img{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    border:2px solid white;
+    object-fit:cover;
+    outline:5px solid #222;
+    outline-offset:5px;
+    box-shadow:0 0 8px #333,0 0 10px #333,0 0 13px #333;
+}
+.container>.bg>figure>figcaption{
+    width: 100%;
+    height:160px;
+    /* border:2px solid white; */
+    color:#fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align:justify;
+    align-content: flex-start;
+    padding:0 10px;
+}
+.container>.bg>figure>figcaption>h3{
+    margin:10px 0;
+    text-shadow:0 0 8px gray,0 0 10px gray;
+}
+/* .container>.change{
+    transform:translateX(100%);
+    border-radius:0;
+    border-top-left-radius:80%;
+    border-bottom-left-radius:30%;
+} */
+.container>section{
+    width: 50%;
+    height: 100%;
+    /* border:5px solid rgba(255, 0, 0, 0.315); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: flex-end;
+    padding-bottom:20px;
+}
+.container>section:nth-of-type(1)>form{
+    opacity: 0;
+}
+.container>section>form{
+    width: 90%;
+    height: 80%;
+    /* background-color:purple; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+.container>section>form>input{
+    width: 100%;
+    height:50px;
+    padding:0 10px;
+    border:none;
+    outline:none;
+    background-color:transparent;
+    border-bottom:1px solid gray;
+    color:#fff;
+}
+.container>section>form>input:focus{
+    border-bottom:2px solid gold;
+}
+.container>section>form>button{
+    width: 120px;
+    height: 50px;
+    border:none;
+    outline:none;
+    font-weight:800;
+    background-color:rgba(255, 166, 0, 0.842);
+    color:#fff;
+    cursor: pointer;
+    border-radius:40px;
+}
+.Remember{
+    width: 100%;   
+    height: 50px;
+    display: flex;
+    color:#fff; 
+}
+.Remember>input{
+    border:none;
+    outline:none;
+    margin-right:10px;
+    width:15px;
+    height:15px;
+}
+
+
+.container>section>span{
+    display: flex;
+    width: 250px;
+    height: 60px;
+    border:2px solid rgba(255, 255, 255, 0.537);
+    justify-content:space-around;
+    align-items: center;
+    color:#fff;
+    font-size:1.2rem;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    z-index:3;
+    overflow: hidden;
+}
+/* .container>section>span>i{
+    width: 50px;
+    height: 100%;
+    background-color:orange;
+    border-radius:50%;
+    text-align: center;
+    line-height:60px;
+    font-size:20px;
+}
+.container>section>span:hover>i{
+    width: 100%;
+    border-radius:0;
+    position: absolute;top: 0;
+    transition:.4s;
+} */

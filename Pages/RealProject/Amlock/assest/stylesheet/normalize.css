@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}/*# sourceMappingURL=normalize.css.map */

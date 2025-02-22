@@ -1,0 +1,23 @@
+
+{
+    "name": "FrontWeb school",
+    "short_name": "FrontWeb",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#000",
+    "theme_color": "#fe585a",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "assest/img/AppLogo.png",
+            "type": "image/png",
+            "sizes": "512×512",
+            "purpose": "web Design class"
+        },
+        {
+            "src": "assest/img/AppLogo2.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ]
+}

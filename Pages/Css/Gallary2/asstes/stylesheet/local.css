@@ -1,0 +1,62 @@
+@media screen and (max-width:576px) {
+    /* samll phone  */
+    #gallary{
+        width: 100%;
+        /* background-color:red; */
+    }
+    #gallary>figure{
+        width: 100%;
+    }
+}
+
+
+@media screen  and (min-width:576px) {
+    /* large phone     */
+    #gallary{
+        width: 100%;
+        /* background-color:purple; */
+    }
+    #gallary>figure{
+        width: 49%;
+    }
+}
+
+
+@media screen  and (min-width:768px) {
+    /* MD  */
+    /* #gallary{
+        background-color:gray;
+    } */
+    #gallary>figure{
+        width: 32%;
+        height: 250px;
+    }
+}
+
+
+@media screen  and (min-width:992px) {
+    /* LG  */
+    #gallary{
+        margin:50px auto;
+        width: 95%;
+        /* background-color:aquamarine; */
+    }
+    #gallary>figure{
+        height: 300px;
+    }
+}
+
+
+@media screen  and (min-width:1200px) {
+    /* XL  */
+    /* #gallary{
+        background-color:yellow;
+    } */
+    #gallary>figure{
+        width: 23%;
+    }
+}
+
+@media screen  and (min-width:1400px) {
+    /* XXL  */
+}

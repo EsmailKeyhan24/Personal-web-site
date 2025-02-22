@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#sevtion_names{
+    width: 100%;
+    height: 100vh;
+    /* background-color:orange; */
+    display: flex;
+    align-items: center;
+}
+#sevtion_names>nav{
+    width: 300px;
+    height: 500px;
+    /* background-color:purple; */
+}
+#sevtion_names>nav>li{
+    width:170px;
+    height: 50px;
+    text-align: center;
+    line-height:50px;
+    background-color:rgb(0, 49, 0);
+    list-style:none;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin:20px auto;
+    color:white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.container{
+    width: 600px;
+    height: 600px;
+    /* border:2px solid black; */
+     border-radius:10px;
+     overflow: hidden;
+     position: relative;
+}
+#sevtion_names>*{
+    margin-left:20px;
+}
+
+.container>div{
+    width: 100%;
+    height: 100%;
+    /* border:2px solid purple; */
+    position: absolute;
+    top:100%;left: 0;
+    transition:.2s;
+    text-align: center;
+    line-height:600px;
+    font-size:2rem;
+    color:#fff;
+}
+.container>div.show{
+    top: 0;
+}
+#BrandName{
+    background-color:yellowgreen;
+}
+#busnisse{
+    background-color:purple;
+}
+#shapes{
+    background-color:gold;
+}
+#colors{
+    background-color:#333;
+}
+#layout{
+    background-color:#dd22cc;
+}
+#done{
+    background-color:darkblue;
+}

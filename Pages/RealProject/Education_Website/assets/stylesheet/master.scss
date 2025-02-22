@@ -1,0 +1,699 @@
+@import "./base/variables";
+@import "./components/button";
+
+//========================================================== NAVBAR SECTION
+section {
+  margin-top: 10px;
+
+  > nav {
+    width: 100%;
+    height: 70px;
+
+    > .large_navbar {
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+
+      > ul {
+        color: $primay;
+        > li {
+          padding-inline: 15px;
+          font-size: $font-size-small;
+        }
+      } // end of ul
+
+      > span {
+        background-image: $background-img;
+        padding: 6px 15px;
+        cursor: pointer;
+
+        > i {
+          font-size: 30px;
+        }
+      } // end of span
+    } // end of large navbar
+
+    > .small_navbar {
+      align-items: center;
+
+      > span {
+        padding: 6px 16px;
+        background-image: $background-img;
+      } // end of pan
+
+      > img {
+        object-fit: contain;
+      } // end of img
+    } // end of small navbar 
+  } // end of nav
+
+} // end of section
+
+.navlinks.show{
+  width: 100%;
+  animation:NavLinksScroll 1s ease-in-out 1 forwards;
+  position: fixed;
+  top: -10px;
+  z-index: 999;
+//   overflow: hidden;
+}
+@keyframes NavLinksScroll {
+    0%,50%,100%{
+        background-color:white;
+    }
+    0%{
+        transform:translateY(-100%);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+.navlinks:where(section,figure){
+    overflow: hidden;
+}
+//====================================================== NAVBAR SECTION END
+
+//========================================================== BANNER SECTION
+#banner_part {
+  display: flex;
+
+  > .banner_text {
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    > h5 {
+      font-size: $font-size-small;
+    }// end of h5
+
+    > h1 {
+      font-size: $font-size-large;
+    } // end of h1
+    > p {
+      font-size: $font-size-small;
+    } // end of p
+    > .banner_btns {
+      gap: 10px;
+    } // end of banner btns
+  } // end of banner text
+
+  > .banner_img {
+    width: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }// end of img
+  } // end of banner img
+} // end of banner part
+//====================================================== BANNER SECTION END
+
+//========================================================= FEATURE SECTION
+#feature_part {
+  min-height: 100%;
+  justify-content: space-between;
+  // margin-bottom: 100px;
+
+  > .feature_box {
+    padding: 20px 0px;
+    justify-content: flex-start;
+    border: 2px solid $light-gray;
+    width: 23%;
+    height: 350px;
+
+    &:nth-of-type(1) {
+      display: block;
+      border: none;
+      > h2 {
+        font-size: $font-size-medium;
+        font-weight: $fontweight-small;
+      } // end of h2
+      > p {
+        font-size: $font-size-small;
+        margin-block: 20px;
+      } // end of p
+    } // end of nth 1
+
+    &:nth-of-type(2),
+    &:nth-of-type(3),
+    &:nth-of-type(4) {
+      justify-content: center;
+      text-align: center;
+      padding-inline: 15px;
+      transition: 0.4s;
+
+      > span {
+        border-radius: 50%;
+        margin-block: 10px;
+        height: 90px;
+        width: 90px;
+        justify-content: center;
+        border-radius: 50%;
+        line-height: 90px;
+        background-color: $light-gray;
+        transition: 0.4s;
+
+        i {
+          font-size: 25px;
+        }
+      } // end of span
+      > h4 {
+        width: 100%;
+        font-size: 20px;
+        font-weight: $fontweight-small;
+      } // end of h4
+
+      > p {
+        font-size: $font-size-small;
+      } // end of p
+
+      :is(&:hover) > span {
+        background: $background-img;
+        color: white;
+      }
+    } // end of nth 2, 3, 4
+
+    &:hover:not(:nth-of-type(1)) {
+      border: 1px solid #e84417;
+    }
+  } // end of feature box
+}// end of feature part
+//===================================================== FEATURE SECTION END
+
+//=========================================================== ABOUT SECTION
+#about_part {
+  > * {
+    width: 50%;
+  }
+
+  > .about_img {
+    background-image: url("../img/learning_img_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: contain;
+    // width: 100;
+    // height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }//end of img
+  }// end of about img
+  > .about_content {
+    font-size: 14px;
+    > h5 {
+      font-weight: $fontweight-small;
+      font-size: $font-size-small;
+      position: relative;
+      padding-left: 70px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 14px;
+        left: 0;
+        background-color: #e87517;
+        width: 45%;
+        height: 3px;
+      }
+    }// end of h5
+    >h2{
+      font-size:25px ;
+      font-weight: $fontweight-small;
+    }/// end of h2
+    >ul li{
+      display: flex;
+      gap: 7px;
+
+      >span{
+        color: $gray;
+      }// end of span
+
+    }//end of ul
+    >button{
+     padding-block:10px;
+     margin-block: 20px;
+    }// end of button
+  }// end of about content
+}// end of about part
+//======================================================= ABOUT SECTION END
+
+//========================================================= COURSES SECTION
+#courses{
+  margin-block: 100px;
+  width: 100%;
+  background-image: $background-img;
+
+  >.row{
+    height: 100%;
+    overflow: hidden;
+    >div{
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      color: $white;
+      opacity: 0;
+
+      >span{
+        font-size: $font-size-large;
+        font-weight: $fontweight-large;
+      }// end of span
+      >h4{
+        color: $white;
+        font-size: 24px;
+        font-weight: $fontweight-small;
+        position: relative;
+
+        &:before{
+          content: "";
+          position: absolute;
+          top: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+          height: 2px;
+          width: 70px;
+          background-color: $white;
+
+        }
+      }// end of h4
+    }// end of div
+    >div.show{
+      animation:courses 1s ease-in-out 1 forwards;
+    }
+    @keyframes courses {
+      100%{
+          opacity: 1;
+      }
+  } // END OF @KEYFRAMS ///
+  }// end of row
+} // end of course
+//===================================================== COURSES SECTION END
+
+//================================================= SPECIAL COURSES SECTION 
+#special_course{
+  flex-direction: column;
+  >.special_course_title{
+    gap: 10px;
+    text-align: center;
+
+    >h5{
+      font-weight: $fontweight-small;
+      text-transform: uppercase;
+      width: 100%;
+      justify-content: center;
+    } // end of h5
+    >h2{
+      font-size: 40px;
+      position: relative;
+      width: 100%;
+
+      &::before{
+        content: "";
+        position: absolute;
+        width: 70px;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 2px solid #e87517;
+      }
+    } // end of h2
+  } // end of special course title
+
+  >.special_course_card{
+    width: 100%;
+    min-height: 560px;
+
+    >.special_course_card_box{
+      border: 2px solid $light-gray;
+      margin-top: 40px;
+      width: 100%;
+      min-height: 400px;
+
+      >figure{
+        width: 100%;
+
+        >img{
+          width: 100%;
+        }
+      }// end of figure
+
+      >.card_box_content{
+        width: 95%;
+        margin: 0 auto;
+
+        >.card_box_header{
+          padding-block: 20px;
+          width: 100%;
+          justify-content: space-between;
+          align-items: center;
+
+          >a{
+            background-color: tomato;
+            font-size: 14px;
+            padding-block: 5px;
+            padding-inline: 15px;
+            color: $white;
+          }// end of button
+
+          >span{
+            color: tomato;
+            font-size: 20px;
+            font-weight: $fontweight-large;
+          }// end of span
+        }// end of box header
+
+        >.card_box_body{
+          width: 100%;
+
+          >h3{
+            font-weight: $fontweight-small;
+            font-size: 20px;
+          }// end of h3
+
+          >p{
+            padding-block: 13px;
+            border-bottom: 1px solid $light-gray;
+            font-size: 14px;
+          }
+        }// end of box body
+
+        >.card_box_footer{
+          width: 100%;
+          padding-block:20px;
+          justify-content: space-between;
+          >.card_box_footer_left{
+            gap: 13px;
+
+            >.footer_left_details{
+              flex-direction: column;
+
+              >p{
+                font-size: 14px;
+                font-weight: 400;
+              }// end of p
+
+              >h4{
+                font-size: 16px;
+                font-weight: $fontweight-small;
+              }// end of h4
+            } // end of left details
+
+          } // end of footer left
+
+          >.card_box_footer_right{
+            flex-direction: column;
+            gap: 10px;
+            >.footer_right_rating{
+              gap: 10px;
+            } // end footer rating
+            >p{
+              text-align: end;
+              font-size: 14px;
+            }// end of p
+          }// end of footer right
+        } // end of box footer
+      }// end of box content
+    } // end of special card box
+  } // end of special course card
+} // end of special course
+//============================================= SPECIAL COURSES SECTION END
+
+
+//================================================ ADVANCED FEATURE SECTION 
+#advanced_feature{
+  width: 95%;
+  margin-block: 100px;
+
+  >.advanced_content{
+    align-content: center;
+    flex-direction: column;
+    width: 55%;
+    gap: 10px;
+    margin-top: 50px;
+
+    >h5{
+      font-weight: $fontweight-small;
+      position: relative;
+      padding-left:100px;
+      text-transform: uppercase;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 14px;
+        left: 0;
+        background-color: #e87517;
+        width: 95px;
+        height: 3px;
+      }
+    }// end of h5
+
+    >h2{
+      padding-top: 10px;
+      padding-bottom: 20px;
+      width: 100%;
+      line-height: 1.1;
+      font-weight: $fontweight-small
+    }// end of h2
+
+    >p{
+      font-size: 14px;
+      margin-bottom: 30px;
+    }// end of p
+
+    >.advanced_box{
+      width: 100%;
+
+      >.advanced_box__1{
+        align-content: flex-start;
+        gap: 12px;
+        >span{
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 60px;
+          background-color:#fff0e0;
+
+          i{
+           font-size: 22px;
+           color: $primay; 
+           font-weight: 200;
+          }
+        }// end of span
+        >h3{
+          width: 100%;
+          font-weight: $fontweight-small;
+        }// end of h3
+        >p{
+          font-size: 14px;
+        }// end of p
+      }// end of advanced box 1
+
+      >.advanced_box__2{
+        align-content: flex-start;
+        gap: 12px;
+        >span{
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 60px;
+          background-color:#fff0e0;
+
+          i{
+           font-size: 22px;
+           color: $primay; 
+           font-weight: 200;
+          }
+        }// end of span
+        >h3{
+          width: 100%;
+          font-weight: $fontweight-small;
+        }// end of h
+        >p{
+          font-size: 14px;
+        }// end of p
+      }// end of advanced box 2
+    }// end of advanced box
+  }// end of advanced content
+
+  >.advanced_img{
+    background-image: url("../img/learning_img_bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 45%;
+  }// end of advanced img
+}// end of advanced feature
+//============================================ ADVANCED FEATURE SECTION END
+
+// =============================================================== STUDENTS
+#Students{
+  width: 100%;
+  height:50vh;
+  margin-bottom: 150px;
+  >.row{
+      width: 80%;
+      height: 100%;
+      margin-left:auto;
+      overflow: hidden;
+      >.line{
+          height: 100%;
+          display: flex;
+          transition:.8s;
+          flex-wrap:nowrap;
+          >figure{
+            width: 850px;
+            height: 100%;
+            margin-left:7px;
+            >figcaption{
+              width: 60%;
+              height: 90%;
+              margin-top:1%;
+              padding: 50px;
+              box-shadow: 0px 10px 30px 0px rgba(12, 46, 96, 0.1);
+              >h4{
+                width: 100%;
+                font-size: 20px;
+              }
+            }
+            >img{
+              width: 220px;
+              height: 250px;
+              margin:0 auto;
+            }
+          } // end of figure
+    } // end of .line
+      
+  } // end of .row
+  .BtnsSlider{
+      width: 100%;
+      height: 60px;
+      justify-content: center;
+      align-items: center;
+      >.BtnSlide{
+          display: flex;
+          width: 12px;
+          height:12px;
+          border-radius: 50%;
+          background-color:#888888;
+          margin-inline:3px;
+          cursor: pointer;
+      }
+      >span.ShowBtn{
+          width: 24px;
+          border-radius:20px;
+          background-color:#f9b700;
+      }
+  } // end of .BtnsSlider
+}
+// =========================================================== STUDETNS END
+
+//========================================================== FOOTER SECTION
+footer{
+  margin-top: 100px;
+  padding-top: 100px;
+  width: 100%;
+  background-color: #f7f7f7;
+  min-height: 50vh;
+
+  >.row{
+    display: flex;
+    justify-content: space-between;
+    >section{
+      // border: 1px solid black;
+    }// end of section
+    >.footer_left{
+      align-content: flex-start;
+      gap: 25px;
+      >figure{
+        width: 220px;
+        height: 60px;
+        >img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      >p{
+        font-size: 14px;
+      }
+    }// end of footer left
+
+    >.footer_bottom{
+      align-content: flex-start;
+      gap: 25px;
+      >p{
+        font-size: 14px;
+      }// end of p
+      >form{
+        position: relative;
+        width: 100%;
+        >input{
+          background-color: transparent;
+          border: 1px solid #999999;
+          width: 100%;
+          height: 40px;
+          padding-left: 20px;
+
+          &::placeholder{
+            color: #999999;
+          }
+        }
+  
+        >span{
+          position: absolute;
+          background-image: $background-img;
+          width: 30px;
+          right: 0;
+          top: 0;
+          margin: 4px;
+          height: 30px;
+          line-height: 30px;
+          color: $white;
+          text-align: center;
+        }
+      }// end of form
+
+      >.footer_bottom__social{
+        display: flex;
+        gap: 20px;
+        >span{
+          
+          color: #999999;
+        }
+      }// end of footer bottom_social
+    }// end of footer bottom
+
+    >.footer_right{
+      align-content: flex-start;
+      gap: 20px;
+
+      >p{
+        font-size: 14px;
+
+        span{
+          color: $primay;
+        }
+      }
+    }// end of footer right    
+  }// end of row
+
+  >.copyright_part{
+    width: 100%;
+    margin-top: 100px;
+    padding-block: 20px;
+    justify-content: center;
+    border-top: 1px solid #999999;
+
+    >p span{
+      color:#e84417;
+    }
+  }
+}// end of footer
+//====================================================== FOOTER SECTION END

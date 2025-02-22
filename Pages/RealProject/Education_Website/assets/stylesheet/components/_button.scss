@@ -1,0 +1,19 @@
+button{
+    padding: $button-padding-large;
+    border: none;
+    outline: none;
+    font-weight: $fontweight-small;
+}
+
+button.primary{
+    background-image: $background-img;
+    border-radius:$button_border_radius;
+    color: $white;
+}
+
+button.secondary{
+    background:transparent;
+    border-radius:$button_border_radius;
+    color: $primay;
+    border: 1px solid $primay;
+}

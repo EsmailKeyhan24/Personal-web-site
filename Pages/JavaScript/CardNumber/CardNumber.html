@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardNumber</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        .container{
+            width: 50%;
+            height: 400px;
+            display: flex;
+        }
+        .container>*{
+            height: 100%;
+        }
+        .container>.card{
+            width: 60%;
+            padding:10px;
+        }
+        .cardNumber{
+            width: 100%;
+            height: 290px;
+            background-color:gold;
+            border-radius:15px;
+            text-align:right;
+            padding:5px;
+            color:#fff;
+        }
+        .cardNumber>h1{
+            font-size:3rem;
+            font-weight:800;
+            margin-right:10px;
+        }
+        .cardNumber-body{
+            width: 80%;
+            height: 70%;
+            /* background-color:purple; */
+            margin:5px auto;
+        }
+        .cardNumber-body>*{
+            width: 100%;
+            /* border:5px solid red; */
+        }
+        .cardNumber-body>.number{
+            height: 60%;
+        }
+        .number>span{
+            display: flex;
+            width:60px;
+            height: 50px;
+            background-color:rgb(129, 88, 168);
+            border-radius:7px;
+            position: relative;
+        }
+        .number>span::after{
+            content:'';
+            display: block;
+            width: 60%;
+            height: 60%;
+            position: absolute;
+            top: 20%;
+            left:0;
+            background-color:rgb(202, 204, 203);
+            border-radius:7px;
+        }
+        .number>h2{
+            width: 100%;
+            height: 50px;
+            /* border:1px solid black; */
+            display: flex;
+            align-items: center;
+        }
+        .cardNumber-body>.name{
+            height: 40%;
+            display: flex;
+        }
+        .name>*{
+            width: 50%;
+            height: 100%;
+            /* border:2px solid gold; */
+        }
+        .name>.fullName>span{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size:1.3rem;
+        }
+        .name>.fullName>strong{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            /* border:1px solid white; */
+            text-transform: capitalize;
+        }
+
+        .date{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .date>section{
+            height: 100%;
+        }
+        .date>section:nth-of-type(1){
+            width: 30%;
+        }
+        .date>section:nth-of-type(2){
+            width: 70%;
+        }
+        .date>section:nth-of-type(2)>span{
+            display: flex;
+            width: 100%;
+            height: 50%;
+            /* border:2px solid gold; */
+            justify-content: center;
+            align-items: center;
+        }
+        /* end of card  */
+        .container>.text{
+            width: 40%;
+        }
+        .text>input{
+            width: 100%;
+            height: 50px;
+            border-radius:20px;
+            border:none;
+            outline:none;
+            background-color:aquamarine;
+            padding:0 10px;
+        }
+        .text>button{
+            width: 100%;
+            height: 50px;
+            margin:10px 0;
+            border:none;
+            outline:none;
+            font-size:1.4rem;
+            font-weight:bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+        <section class="card">
+            <div class="cardNumber">
+                <h1>VISA</h1>
+                <section class="cardNumber-body">
+                    <div class="number">
+                        <span></span>
+                        <h2 id="textNumber"></h2>
+                    </div>
+                    <div class="name">
+                        <div class="fullName">
+                            <span>FULL NAME</span>
+                            <strong id="username"></strong>
+                        </div>
+                        <div class="date">
+                                <section>
+                                    <span>Valid Date</span>
+                                </section>
+                                <section>
+                                    <span>Month/Year</span>
+                                    <span id="Date"></span>
+                                </section>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="text">
+            <span>Card Number</span>
+            <input type="text" placeholder="1234-5678-0056-1267" id="numbercard" autofocus required>
+            <span>Cardholder Name</span>
+            <input type="text" id="FullName">
+            <span>Expir Date</span>
+            <input type="date" id="ExpirDate">
+            <span>Security Number</span>
+            <input type="text" placeholder="CVC" disabled>
+            <button>Pay</button>
+   </div>
+</body>
+    <script>
+        document.getElementById('numbercard').addEventListener('input',function(){
+            let temp=this.value
+            temp=temp.substring(temp.length-1)
+           document.getElementById('textNumber').innerHTML+=temp
+            let _text=this.value
+           if(_text.length==4){
+                document.getElementById('textNumber').innerHTML+=' - '
+           }
+            if(_text.length==8){
+                document.getElementById('textNumber').innerHTML+=' - '
+           }
+            if(_text.length==12){
+                document.getElementById('textNumber').innerHTML+=' - '
+           }
+            if(_text.length>=16){
+                document.getElementById('FullName').focus()
+               document.getElementById('numbercard').setAttribute('disabled','required')
+           }
+        })
+
+        document.getElementById('FullName').addEventListener('input',function(){
+            document.getElementById('username').innerHTML=this.value    
+        })
+
+        document.getElementById('ExpirDate').addEventListener('keyup',function(){
+            document.getElementById('Date').innerHTML=this.value
+        })
+    </script>
+</html>

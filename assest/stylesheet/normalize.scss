@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+}
+body{
+    overflow-x: hidden;
+    background-color:#000;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#f2cb0537;
+    border-radius:20px;
+}
+.myimgs{
+    image-rendering: pixelated;
+}
+li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+img{
+    object-fit:cover;
+}
+.Responsive-center{
+    // background-color:gray;
+    overflow-x:hidden;
+}
+// icon-droplet
+
+@font-face {
+    font-family:Switzer;
+    src: url(../font/Switzer-Bold.otf);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:Switzer;
+}
+@font-face {
+    font-family:AGT_Gardez2;
+    src: url(../font/AGT_Gardez2.otf);
+}
+p{
+    font-family:AGT_Gardez2;
+    font-size:1.2rem;
+}

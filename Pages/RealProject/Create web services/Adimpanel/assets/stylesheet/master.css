@@ -1,0 +1,276 @@
+.nightmode {
+  font-size: 100px;
+  position: absolute;
+  top: -20px;
+  right: 50px;
+  cursor: pointer;
+  color: rgb(151, 151, 0);
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+main > nav {
+  width: 20%;
+  height: 100vh;
+  background-image: url(../imgs/bg_1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+main > nav::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 180vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.721);
+}
+main > nav::-webkit-scrollbar {
+  width: 5px;
+}
+main > nav::-webkit-scrollbar-thumb {
+  background-color: gold;
+  border-radius: 100px;
+}
+main > nav > .navbar-body {
+  width: 100%;
+  height: 160vh;
+  z-index: 1;
+}
+main > nav > .navbar-body .navbar-text {
+  width: 100%;
+  height: 130px;
+  border-bottom: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main > nav > .navbar-body .navbar-text > span {
+  display: block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  color: #fff;
+}
+main > nav > .navbar-body .navbar-text > h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  color: #fff;
+}
+main > nav > .navbar-body ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: flex-start;
+}
+main > nav > .navbar-body ul > li {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+main > nav > .navbar-body ul > li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 1px solid gray;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transition: 0.4s;
+  opacity: 0;
+}
+main > nav > .navbar-body ul > li:hover::after {
+  width: 100%;
+  left: 0;
+  opacity: 1;
+}
+main > nav > .navbar-body ul > li > a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  padding-left: 10px;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  transition: 0.2s;
+}
+main > nav > .navbar-body ul > li > a:hover {
+  background-color: rgba(0, 0, 0, 0.33);
+  color: #c5c5c5;
+  padding-left: 15px;
+}
+main > nav > .navbar-body ul > li > a > span {
+  display: block;
+  width: 70px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+main > section {
+  width: 80%;
+  height: 100vh;
+  background-image: url(../imgs/Web-designer-scaled-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: scroll;
+}
+main > section::-webkit-scrollbar {
+  width: 5px;
+}
+main > section::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 100px;
+}
+main > section > .top {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  box-shadow: 9px 2px 10px 1px rgba(0, 0, 0, 0.624);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+main > section > .top > .toggle {
+  width: 35px;
+  height: 35px;
+  /* border:2px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  cursor: pointer;
+}
+main > section > .top > .toggle > span {
+  display: block;
+  width: 100%;
+  height: 0;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+main > section .body-priview {
+  width: 100%;
+  min-height: 200vh;
+  transition: 0.7s 0.2s linear;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+main > section .body-priview > * {
+  border-top: 5px solid #222222;
+  color: #fff;
+}
+main > section .body-priview #home {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+main > section .body-priview #admins {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+main > section .body-priview #users {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+main > section .body-priview #cards {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+main > section .body-priview #paragraph {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+main > section .body-priview #cours {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+main > section .body-priview #services {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+main > section .body-priview #articles {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+main > section .body-priview #about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+main > section .body-priview #contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+.mytoggle {
+  width: 5%;
+  background-color: purple;
+}
+
+.Nightmode {
+  background-color: black;
+  color: white;
+}/*# sourceMappingURL=master.css.map */

@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* BACKGROUND_IMAGE*/
+/* COLORS */
+/* PADDING */
+/* FONT_SIZE */
+/* FONT WEIGHT */
+/* BORDER_RADIUS */
+button {
+  padding: 14.5px 30px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+}
+
+button.primary {
+  background-image: -webkit-linear-gradient(0deg, #ee390f 0%, #f9b700 100%);
+  border-radius: 50px;
+  color: #fff;
+}
+
+button.secondary {
+  background: transparent;
+  border-radius: 50px;
+  color: #0c2e60;
+  border: 1px solid #0c2e60;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+section {
+  width: 75%;
+  margin: 0 auto;
+}
+section:nth-of-type(1) {
+  min-height: 70px;
+}
+
+section, header, div, figure, figcaption, article, footer, main, nav, ul, footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h1, h2, h3, h4, h6 {
+  color: #0c2e60;
+}
+
+h5 {
+  color: #7f7f85;
+}
+
+p {
+  color: #7f7f85;
+}/*# sourceMappingURL=normalize.css.map */

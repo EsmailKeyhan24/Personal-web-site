@@ -1,0 +1,42 @@
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(transparent, green);
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(transparent, #00c6ff);
+}
+
+@font-face {
+  font-family: Zar-Bold;
+  src: url(../Fonts/Bahij\ Zar-Bold.ttf);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}/*# sourceMappingURL=normalize.css.map */

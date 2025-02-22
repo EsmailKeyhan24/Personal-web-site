@@ -1,0 +1,267 @@
+@charset "UTF-8";
+.social > li, .social > span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  text-shadow: 0 0 8px gray, 0 0 12px gray, 0 0 16px gray;
+  font-weight: bold;
+  transition: 0.4s;
+  backdrop-filter: blur(13px) saturate(200%);
+  -webkit-backdrop-filter: blur(13px) saturate(200%);
+  background-color: rgba(8, 151, 132, 0.018);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.social > li:hover, .social > span:hover {
+  transform: scale(1.3);
+}
+.social > li > a > i, .social > span > a > i {
+  color: black;
+}
+.social > li:hover > a > i, .social > span:hover > a > i {
+  color: rgba(0, 0, 0, 0.363);
+}
+
+.header_top {
+  width: 100%;
+  background-image: url(../imgs/bg-header.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+@keyframes banner_head {
+  to {
+    transform: scaleX(1.1);
+  }
+}
+.header_top #header_top {
+  width: 100%;
+  height: 80px;
+  padding: 0 30px;
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.header_top #header_top > div,
+.header_top #header_top > figure {
+  height: 100%;
+}
+.header_top #header_top > nav > ul {
+  width: 100%;
+  height: 100%;
+}
+.header_top #header_top > nav > ul > li:hover > a {
+  color: goldenrod;
+}
+.header_top #header_top > nav > ul > li > a {
+  color: black;
+  font-family: Zar-Bold;
+  font-size: 20px;
+  font-weight: bold;
+}
+.header_top #header_top > figure {
+  position: relative;
+}
+.header_top #header_top > figure > img {
+  transform: scale(0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header_top #header_top > div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header_top #header_top > div > .toggle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-content: space-evenly;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.header_top #header_top > div > .toggle > span {
+  display: flex;
+  width: 100%;
+  height: 2px;
+  border: 2px solid black;
+  border-radius: 100px;
+}
+.header_top #header_top .navbar_top {
+  width: 90%;
+  left: 5%;
+  background-color: white;
+  opacity: 1;
+}
+.header_top .banner_header_text {
+  height: 85%;
+}
+.header_top .banner_header_text > div {
+  height: 100%;
+}
+.header_top .banner_header_text > div > h1 {
+  font-size: 10vw;
+  color: #fff;
+  text-shadow: 0 0 5px black;
+}
+
+.demous-cards > section > div {
+  height: 340px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.demous-cards > section > div > figure {
+  width: 95%;
+  height: 240px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.demous-cards > section > div > figure:hover > img {
+  transform: scale(1.1);
+}
+.demous-cards > section > div > figure > img {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s;
+}
+.demous-cards > section > div > section {
+  width: 90%;
+  height: 200px;
+  border-radius: 10px;
+  transform: translateY(-30px);
+  transition: 0.4s;
+  backdrop-filter: blur(0px) saturate(200%);
+  -webkit-backdrop-filter: blur(0px) saturate(200%);
+  background-color: rgba(8, 151, 133, 0.15);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.demous-cards > section > div > section > div {
+  width: 95%;
+  height: 90%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  flex-wrap: wrap;
+}
+.demous-cards > section > div > section > div > h3 > a {
+  color: black;
+}
+.demous-cards > section > div > section > div > a {
+  display: flex;
+  width: 130px;
+  height: 50px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background-color: #82b440;
+  border-radius: 10px;
+  font-size: 18px;
+  transform: translateY(50px);
+}
+.demous-cards > section > div:hover > section {
+  transform: translateY(-110px);
+}
+.demous-cards > section > div:hover .view {
+  transform: translateY(0px);
+  transition: 0.4s linear;
+}
+
+.Features {
+  background-color: rgb(252, 252, 252);
+}
+.Features .Features-box {
+  background-color: white;
+}
+.Features .Features-box > div > p {
+  font-size: 18px;
+}
+
+#our-cours {
+  background-color: rgb(252, 252, 252);
+}
+#our-cours .card {
+  background-color: transparent;
+}
+#our-cours .card .cours-card {
+  border-radius: 5px;
+  background-color: #2afadf;
+}
+#our-cours .card .cours-card > section > img, #our-cours .card .cours-card > section > svg {
+  width: 100px;
+  height: 100px;
+  animation: icon-cours infinite linear 1s alternate;
+}
+@keyframes icon-cours {
+  to {
+    transform: scale(1.1);
+  }
+}
+#our-cours .card .cours-card > h3 {
+  color: #fff;
+  text-shadow: 0 0 10px black;
+}
+#our-cours .card-footer > span {
+  color: white;
+  text-shadow: 0 0 8px gray, 0 0 12px gray, 0 0 16px gray;
+  transition: 0.4s;
+}
+#our-cours .card-footer > span:hover {
+  font-weight: bold;
+  padding: 0 10px;
+}
+#our-cours .card-footer > span:nth-of-type(1) {
+  color: #000;
+  font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  min-height: 70vh;
+  background-image: url(../imgs/foother-bg.png);
+  background-size: 100% 90%;
+  background-position: center;
+}
+footer .card {
+  background-color: transparent;
+}
+footer h3 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+footer p {
+  color: #fff;
+}
+footer ul > li {
+  padding: 5px 0;
+  transition: 0.4s;
+  transition: 0.4s;
+}
+footer ul > li:hover::marker {
+  content: "👉";
+}
+footer ul > li > a {
+  color: #fff;
+}
+footer ul > li > a:hover {
+  color: goldenrod;
+  font-weight: bold;
+}/*# sourceMappingURL=master.css.map */

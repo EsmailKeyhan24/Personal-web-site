@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: bzar;
+            src: url(bzar.ttf);
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+            font-family: bzar;
+        }
+        .container {
+            width: 450px;
+            height: 250px;
+            /* border:2px solid red; */
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .container>textarea,
+        .container>button {
+            font-family: bzar;
+        }
+
+        .container>textarea {
+            width: 100%;
+            height: 120px;
+            outline: none;
+            padding: 10px;
+            direction: rtl;
+            font-size: 25px;
+            animation-duration:.4s;
+            animation-timing-function:linear;
+            animation-iteration-count:3;
+        }
+        @keyframes error {
+            0%{
+                transform:translateX(0);
+            }
+            33%{
+                transform:translateX(-10px);
+                border:3px solid red;
+                box-shadow:0 0 10px gray;
+            }
+            66%{
+                transform:translate(10px);
+                border:3px solid red;
+                box-shadow:0 0 10px gray;
+            }
+            
+        }
+        .container>button {
+            width: 100%;
+            height: 60px;
+            margin-top: 15px;
+            cursor: pointer;
+            border: none;
+            font-size: 30px;
+            font-weight: 600;
+            background-color: #8fc8f9;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <textarea id="textarea" placeholder="یک متن تایپ کنید......" autofocus id="textarea"></textarea>
+        <button id="copy">کپی کن</button>
+    </div>
+</body>
+<script>
+    let textarea = document.getElementById('textarea')
+    const btncopy = document.getElementById('copy')
+    document.getElementById('copy').addEventListener('click', function () {
+        if ((textarea.value) == null || (textarea.value) == '') {
+            textarea.style.animationName='error'
+        } else {
+            textarea.select()
+            textarea = textarea.value
+            navigator.clipboard.writeText(textarea)
+            btncopy.innerHTML = '✔ کپی شد'
+            btncopy.style.background = 'rgb(9 , 176 ,206)'
+            setTimeout(() => {
+                btncopy.innerHTML = 'کپی کن'
+                btncopy.style.background = '#8fc8f9'
+            }, 1500);
+        }
+    })
+</script>
+
+</html>

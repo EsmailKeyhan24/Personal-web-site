@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assest/stylesheet/normalize.css">
+    <link rel="stylesheet" href="assest/stylesheet/masetr.css">
+    <link rel="stylesheet" href="assest/stylesheet/Responsice.css">
+    <style>
+        section{
+            width: 80%;
+            height: 100vh;
+            border:2px solid white;
+            margin:0 auto;
+            display: grid;
+            grid-template-columns: repeat(3 , 1fr);
+            grid-template-rows: repeat(5 , 300px);
+        }
+        section>div{
+            border:2px solid white;
+        }
+        section>div:nth-of-type(1){
+            grid-row:1 / span 2;
+        }
+        section>div:nth-of-type(3){
+            background-color:orange;
+            grid-area:1 / 3 / span 2 / span 1;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+<script src="assest/js/master.js"></script>
+</html>

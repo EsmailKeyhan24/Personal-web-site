@@ -1,0 +1,1081 @@
+/* @media screen and (max-width:400px) {
+    .Responsive-center{
+        width:450px;
+        margin: 0 auto;
+    }
+} */
+@media screen and (max-width:450px) {
+    #footer>ul>li{
+        width: 100%;
+    }
+}
+@media screen and (max-width:576px) {
+    /* small phone  */
+    /* .header_top{
+        position: absolute;
+        z-index:9999;
+    } */
+    .menuPhone{
+        height:60px;
+        /* background-color:purple; */
+        overflow: hidden;
+        display: flex;
+        align-content: flex-start;
+        transition:.8s;
+        z-index:999999;
+        position: relative;
+    }
+    .menuPhone>.menuPhone_child{
+        height: 60px;
+        /* background-color:red; */
+    }
+    .menuPhone>.menuPhone_child>div{
+        height: 100%;
+        /* border:2px solid white; */
+    }
+    .toggle{
+        width: 35px;
+        height: 35px;
+        /* border:1px solid white; */
+        display: flex;
+        flex-wrap: wrap;
+        align-content:space-evenly;
+        cursor: pointer;
+        z-index:999;
+    }
+    .toggle>span{
+        display: block;
+        width: 100%;
+        height:0;
+        border:2px solid #fff;
+        border-radius: 10px;
+    } 
+    .menuPhone>ul>li{
+        width: 100%;
+        height: 40px;
+        /* border-bottom:2px solid white; */
+        color:#fff;
+    }
+    .menuPhone>ul>li:nth-of-type(1){
+        color:#ffbd39;
+    }
+    .menuPhone>ul>li>a{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        text-transform: capitalize;
+        color:inherit;
+        padding-left:5px;
+        font-size:17px;
+        font-weight: 500;
+        padding-left:25px;
+    }
+    .ulphonesmall{
+        height:420px;
+        transition:1s;
+    }
+    #menuLarge{
+        display: none;
+    }
+/* end of menus **************************************  */
+/* ******************************************************  */
+        #mybanner{
+        position: relative;
+    }
+    /* شروع متن های معرفی هیدر  */
+    #mybanner>.text-infor{
+        width: 90%;
+        position: absolute;
+        left: 5%;
+        z-index:1;
+        display: flex;
+        justify-content: center;
+    }
+    .text-infor-ALL{
+        margin-top:200px;
+        width: 85%;
+        /* background-color:purple; */
+        min-height:100px;
+    }
+    .text-infor1{
+        width: 100%;
+    }
+    .text-infor1>span{
+        color:#ffbd39;
+        font-size:20px;
+        font-weight:500;
+        text-align: center;
+        width: 100%;
+        display: block;
+        margin-bottom:30px;
+    }
+    .text-infor1>h2{
+        font-size:2.5rem;
+        font-weight:700;
+    }
+    .text-infor1>h2>span{
+        color:#ffbd39;
+    }
+
+        /* ختم متن های معرفی هیدر  */
+     /* شروع بخش عکس های اسلایدر قسمت هیدر  */
+    .mybanner-imgs{
+        height: 663px;
+        position: relative;
+    }
+    .mybanner-imgs>figure{
+        width: 100%;
+        height: 645px;
+        position: absolute;
+        top: 0;left: 0;
+    }
+    .mybanner-imgs>figure>img{
+        width: 100%;
+        height: 100%;
+    }
+    /* عکس های اسلایدر هیدر اینجا ختم گردیده است  */
+
+    /* شروع محل توضحیات متن های درباره ما  */
+    .text-about{
+        position: relative;
+    }
+    .text-about>h3{
+        font-size:6vw;
+        font-weight:800;
+        transform:translate(20px , 30px);
+    }
+    .text-about>h2{
+        position: absolute;
+        font-size:15vw;
+        left: 4px;
+        transform:translateY(1000px);
+        /* color:orange; */
+        color:rgba(93, 93, 93, 0.16);
+        font-weight:800;
+    }
+    .text-about>p{
+        color:rgb(157, 157, 157);
+        width: 100%; 
+        font-weight:500;
+        /* font-size:18px; */
+    }
+    .text-about>ul>li>span{
+        color:#fff;
+        font-weight:700;
+    }
+    .text-about>ul>li>p,
+    .text-about>ul>li>strong{
+        color:rgb(192, 192, 192);
+    }
+    .text-about>ul>li:last-child>p{
+        color:#fff;
+        font-size:1.2rem;
+        font-weight:500;
+    }
+    .text-about>ul>li:last-child>span{
+        color:#ffbd39;
+    }
+    /* ختم محل توضحیات متن های درباره ما  */
+    /* شروع قسمت رزومه  */
+    #resume>h2{
+        font-size:1.4rem;
+        font-weight: 800;
+    }
+    /* ختم محل رزومه در حالت گوشی  */
+    /* start scope services  */
+    #services>h2,
+    #services>h3{
+     text-align: center;
+    }
+ #services>h2{
+     font-size:3.3rem;
+ }
+ #services>h3{
+     z-index:2;
+     font-size:2rem;
+     transform:translateY(-55px);
+ }
+    /* end scope services  */
+    /* شروع قسمت مهارت های من  */
+    
+    #skills>h3,
+    #skills>h2{
+        font-weight: 800;
+        text-align: center;
+    }
+    #skills>h3{
+        font-size:2.6rem;
+        transform:translateY(-70px);
+    }
+    #skills>h2{
+        font-size:3.8rem;
+        color:rgba(136, 136, 136, 0.16);
+    }  
+    /* ختم شروع قسمت مهارت های من  */
+      /* شروع قسمت پروژه های من  */
+    
+    #Cv>h3,
+    #Cv>h2{
+        font-weight: 800;
+        text-align: center;
+    }
+    #Cv>h3{
+        font-size:1.8rem;
+        transform:translateY(-60px);
+    }
+    #Cv>h2{
+        font-size:4rem;
+        color:rgba(136, 136, 136, 0.16);
+    }   
+    .imgCvs{
+        width: 100%;
+        height: 100vh;
+    } 
+    .imgCvs>figure{
+        width: 100%;
+        height: 50%;
+    }
+    .imgCvs>figure>img{
+        width: 100%;
+        height: 100%;
+    }
+        /* ختم قسمت پروژه های من  */
+        /* شروع درباره من  */
+        #contact{
+            position: relative;
+        }
+        #contact>h3,
+        #contact>h2{
+            font-weight: 800;
+        }
+        #contact>h3{
+            font-size:1.5rem;
+        }
+        #contact>h2{
+            position: absolute;
+            left:calc(50% - 125px); 
+            transform:translateY(-5px); 
+            z-index:-1;
+            font-size:4rem;
+            color:rgba(136, 136, 136, 0.16);
+        } 
+        /* ختم درباره من  */
+        /* start scope .contact-map  */
+        .contact-map{
+            width: 100%;
+        }
+        /* end of scope .contact-map  */
+
+
+/* =========================== .navbarLinks_portfolio ======================  */
+.navbarLinks_portfolio>ul>li{
+    margin-inline:0;
+    font-size:10px;
+}
+.SASS>figure,
+.CSS>figure,
+.NEXT>figure,
+.JAVASCRIPT>figure,
+.ReactProjects>figure,
+.ReallProject>section{
+    width: 100%;
+    height: 300px;
+    margin-block:5px;
+}
+/* ===========================END .navbarLinks_portfolio ======================  */
+}
+
+
+/* ====================== #accordion======================  */
+#accordion>.row{
+    width: 100%;
+}
+#accordion>.row>ul>li.showAccordion{
+    height: 550px;
+}
+.content,
+.player
+{
+    width: 100%;
+    height: 50%;
+    /* border:2px solid white; */
+}
+/* ======================END #accordion======================  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:576px) {
+    /* Larg phone sm  */
+    /* .header_top{
+        position: absolute;
+        z-index:9999;
+    } */
+    .menuPhone{
+        height:60px;
+        /* background-color:purple; */
+        overflow: hidden;
+        display: flex;
+        align-content: flex-start;
+        transition:.8s;
+    }
+    .menuPhone>.menuPhone_child{
+        height: 60px;
+        /* background-color:red; */
+    }
+    .menuPhone>.menuPhone_child>div{
+        height: 100%;
+        /* border:2px solid white; */
+    }
+    .toggle{
+        width: 35px;
+        height: 35px;
+        /* border:1px solid white; */
+        display: flex;
+        flex-wrap: wrap;
+        align-content:space-evenly;
+        cursor: pointer;
+        z-index:999;
+    }
+    .toggle>span{
+        display: block;
+        width: 100%;
+        height:0;
+        border:2px solid #fff;
+        border-radius: 10px;
+    }
+    /* .menuPhone>ul{
+        border-top:5px solid gold;
+    } */
+    .menuPhone>ul>li{
+        width: 100%;
+        height: 40px;
+        /* border-bottom:2px solid white; */
+        color:#fff;
+    }
+    .menuPhone>ul>li:nth-of-type(1){
+        color:#ffbd39;
+    }
+    .menuPhone>ul>li>a{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        text-transform: capitalize;
+        color:inherit;
+        padding-left:5px;
+        font-size:17px;
+        font-weight: 500;
+        padding-left:50px;
+    }
+    .ulphonesmall{
+        height:380px;
+        transition:1s;
+    }
+    #menuLarge{
+        display: none;
+    }
+    /* end of menus ****************************** */
+    /* **************************************************  */
+        /* شروع متن های معرفی هیدر  */
+        .text-infor{
+            display: flex;
+            justify-content: center;
+        }
+        .text-infor-ALL{
+            margin-top:200px;
+            width: 85%;
+            /* background-color:purple; */
+            min-height:100px;
+        }
+        .text-infor1{
+            width: 100%;
+            text-align: center;
+        }
+        .text-infor1>span{
+            color:#ffbd39;
+            font-size:20px;
+            font-weight:500;
+            text-align: center;
+            width: 100%;
+            display: block;
+            margin-bottom:30px;
+        }
+        .text-infor1>h2{
+            font-size:7vw;
+            font-weight:800;
+        }
+        .text-infor1>h2>span{
+            color:#ffbd39;
+        }
+
+
+
+        /* ختم متن های معرفی هیدر  */
+     /* شروع بخش عکس های اسلایدر قسمت هیدر  */
+    #mybanner{
+        position: relative;
+    }
+    #mybanner>.text-infor{
+        width: 85%;
+        position: absolute;
+        left: 7.5%;
+        z-index:1;
+    }
+    .mybanner-imgs{
+        height: 663px;
+        position: relative;
+    }
+    .mybanner-imgs>figure{
+        width: 100%;
+        height: 650px;
+        position: absolute;
+        top: 0;left: 0;
+    }
+    .mybanner-imgs>figure>img{
+        width: 100%;
+        height: 100%;
+    }
+    /* عکس های اسلایدر هیدر اینجا ختم گردیده است  */
+    /* شروع محل توضحیات متن های درباره ما  */
+    .text-about{
+        position: relative;
+    }
+    .text-about>h3{
+        font-size:6vw;
+        font-weight:800;
+        transform:translate(20px, 10px);
+    }
+    .text-about>h2{
+        position: absolute;
+        font-size:12vw;
+        left:0;
+        top:-15px;
+        /* color:orange; */
+        color:rgba(136, 136, 136, 0.16);
+        font-weight:800;
+    }
+    .text-about>p{
+        color:rgb(192, 192, 192);
+        width: 100%; 
+        font-weight:500;
+        /* font-size:18px; */
+    }
+    .text-about>ul>li>span{
+        color:#fff;
+        font-weight:700;
+    }
+    .text-about>ul>li>p,
+    .text-about>ul>li>strong{
+        color:rgb(192, 192, 192);
+    }
+    .text-about>ul>li:last-child>p{
+        color:#fff;
+        font-size:1.2rem;
+        font-weight:500;
+    }
+    .text-about>ul>li:last-child>span{
+        color:#ffbd39;
+    }
+    /* ختم محل توضحیات متن های درباره ما  */
+    /* شروع قسمت رزومه  */
+    #resume>h2{
+        font-size:1.4rem;
+    }
+    /* ختم محل رزومه در حالت گوشی  */
+    /* شروع قسمت services */
+   /* start scope services  */
+   #services>h2,
+   #services>h3{
+    text-align: center;
+   }
+#services>h2{
+    font-size:3.3rem;
+}
+#services>h3{
+    z-index:2;
+    font-size:2rem;
+    transform:translateY(-55px);
+}
+/* end scope services  */
+    /* ختم قسمت services */
+    /* شروع قسمت مهارت ها Skills  */
+    #skills>h3,
+    #skills>h2{
+        font-weight: 800;
+        text-align: center;
+    }
+    #skills>h3{
+        font-size:2.6rem;
+        transform:translateY(-70px);
+    }
+    #skills>h2{
+        font-size:3.8rem;
+        color:rgba(136, 136, 136, 0.16);
+    }  
+    /* ختم قسمت مهارت ها skills  */
+    /* شروع قسمت پروژه های من  */
+    #Cv>h3,
+    #Cv>h2{
+        font-weight: 800;
+        text-align: center;
+    }
+    #Cv>h3{
+        font-size:1.8rem;
+        transform:translateY(-60px);
+    }
+    #Cv>h2{
+        font-size:4rem;
+        color:rgba(136, 136, 136, 0.16);
+    }   
+    .imgCvs{
+        height:100vh;
+    }
+    .imgCvs>figure{
+        width:100%;
+        height:50%;
+    }
+        /* ختم قسمت پروژه های من  */
+    /* شروع درباره من  */
+    #contact{
+        position: relative;
+    }
+    #contact>h3,
+    #contact>h2{
+        font-weight: 800;
+    }
+    #contact>h3{
+        font-size:1.5rem;
+    }
+    #contact>h2{
+        position: absolute;
+        left:calc(50% - 125px); 
+        transform:translateY(-5px); 
+        z-index:-1;
+        font-size:4rem;
+        color:rgba(136, 136, 136, 0.16);
+    } 
+    /* ختم درباره من  */
+      /* start scope .contact-map  */
+      .contact-map{
+        width:80%;
+    }
+    /* end of scope .contact-map  */
+
+
+    /* ====================== #accordion======================  */
+#accordion>.row{
+    width: 100%;
+}
+#accordion>.row>ul>li.showAccordion{
+    height: 400px;
+}
+.content{
+    height: 30%;
+}
+.player{
+    height: 70%;
+}
+.content,
+.player
+{
+    width: 100%;
+}
+/* ======================END #accordion======================  */
+
+
+
+
+/* ==============**** #portfolio **** =====  */
+.SASS>figure,
+.CSS>figure,
+.NEXT>figure,
+.JAVASCRIPT>figure,
+.ReactProjects>figure,
+.ReallProject>section{
+    width: 100%;
+    height: 300px;
+    /* background-color:red; */
+    margin-block:5px;
+    /* border:2px solid white; */
+}
+/* ==============**** #portfolio **** =====  */
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) {
+    /* MD     */
+      /* توضیحات عکس درباره ما  */
+      #about{
+        overflow:hidden;
+      }
+    .img-about{
+        height: 500px;
+    }
+    .img-about>img{
+        width: 100%;
+        height: 100%;
+    }
+      /* ختم محل عکس درباره ما  */
+      /* شروع محل توضحیات متن های درباره ما  */
+      .text-about{
+        padding-left:20px;
+        position: relative;
+      }
+    .text-about>h3{
+        font-size:5vw;
+        font-weight:800;
+        transform:translate(15px, 23px)
+    }
+    .text-about>h2{
+        position: absolute;
+        font-size:10vw;
+        left:0;
+        /* transform: translateY(-9000px); */
+    }
+    .text-about>p{
+        width: 80%;
+    }
+    /* ختم محل توضحیات متن های درباره ما  */
+    /* *********************************************** */
+    /* *********************************************** */
+     /* شروع قسمت رزومه  */
+    
+    /* ختم محل رزومه در حالت گوشی  */
+    /* شروع قسمت services */
+   
+    /* ختم قسمت services */
+        /* شروع قسمت مهارت ها Skills  */
+        #skills>h2{
+            font-size:4rem;
+            color:rgba(136, 136, 136, 0.16);
+        }  
+        /* ختم قسمت مهارت ها skills  */
+/* ===== #Cv ====  */
+/* =====end of #Cv ====  */
+
+
+
+/* ====================== #accordion======================  */
+#accordion>.row{
+    width:80%;
+}
+/* ======================END #accordion======================  */
+
+
+
+/* ==============**** #portfolio **** =====  */
+
+
+.CSS{
+    justify-content: space-evenly;
+}
+.CSS>figure{
+    width: 33%;
+    margin-block:2px;
+}
+.SASS{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    grid-template-rows: repeat(4 , 300px);
+    gap:10px;
+}
+.SASS>figure:nth-of-type(1){
+    grid-column:1 / span 5;
+}
+.SASS>figure:nth-of-type(2){
+    grid-column:1 / span 2;
+}
+.SASS>figure:nth-of-type(3){
+    grid-column:3 / span 2;
+}
+.SASS>figure:nth-of-type(6){
+    grid-column:2 / span 3;
+}
+.JAVASCRIPT{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(5, 300px);
+    gap:10px;
+}
+.JAVASCRIPT>figure:nth-of-type(2){
+    grid-column:2 / span 2;
+}
+.JAVASCRIPT>figure:nth-of-type(3){
+    grid-column:1 / span 2;
+}
+.JAVASCRIPT>figure:nth-of-type(6){
+    grid-column:2 / span 2;
+}
+.JAVASCRIPT>figure:nth-of-type(7){
+    grid-column:1 / span 3;
+}
+.JAVASCRIPT>figure:nth-of-type(8){
+    grid-column:1 / span 2;
+}
+
+.ReactProjects{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(5, 300px);
+    gap:10px;
+}
+.ReactProjects>figure:nth-of-type(1){
+    grid-column:1 / span 3;
+}
+.ReactProjects>figure:nth-of-type(3){
+    grid-column:2 / span 2;
+}
+.ReactProjects>figure:nth-of-type(4){
+    grid-column:1 / span 3;
+}
+.ReactProjects>figure:nth-of-type(9){
+    grid-column:2 / span 2;
+}
+.NEXT{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(5 , 1fr);
+    height: 100vh;
+    gap:10px;
+}
+.NEXT>figure:nth-of-type(1),
+.NEXT>figure:nth-of-type(5)
+{
+    grid-column:1 / span 2;
+}
+.NEXT>figure:nth-of-type(4),
+.NEXT>figure:nth-of-type(8){
+    grid-column:2 / span 2;
+}
+.ReallProject{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(6 , 300px);
+    gap:10px;
+}
+.ReallProject>section{
+    width: 100%;
+    height: 300px;
+    /* background-color:red; */
+    margin-block:5px;
+}
+.ReallProject>section:nth-of-type(2){
+    grid-column:2 / span 2;
+}
+.ReallProject>section:nth-of-type(3){
+    grid-column:1 / span 2;
+    /* background-color:purple; */
+}
+.ReallProject>section:nth-of-type(6){
+    grid-column:2 / span 2;
+}
+.ReallProject>section:nth-of-type(10){
+    grid-column:1 / span 3;
+}
+.ReallProject>section:nth-of-type(12){
+    grid-column:2 / span 2;
+}
+/* ==============**** #portfolio **** =====  */
+}
+
+
+
+
+
+
+
+@media screen and (min-width:992px) {
+    /* LG  */
+   #menuLarge{
+    display: block;
+    height:70px;
+    /* background-color:purple; */
+   }
+   #menuLarge>section{
+    height: 100%;
+   }
+  .menuLarge-logo>figure{
+    width: 80%;
+    height:70px;
+    position: relative;
+    /* border:2px solid white; */
+  }
+  .menuLarge-logo>figure>img{
+    width: 100%;
+    height: 100%;
+  }
+  .menuLarge-logo>figure>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;left: 0;
+  }
+   #menuLarge>section>*{
+    height: 100%;
+   }
+   #menuLarge>section>ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   #menuLarge>section>ul>li{
+    height: 100%;
+    color:#fff;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    position: relative;
+   }
+   #menuLarge>section>ul>li::after{
+    content:'';
+    display: block;
+    width: 0;
+    height: 0;
+    border:1px solid #ffbd39;
+    position: absolute;
+    bottom: 0;
+    left:calc(50% - 3%);
+    transition:.4s;
+    opacity: 0;
+   }
+   #menuLarge>section>ul>li:hover::after{
+    width: 100%;
+    left: 0;
+    opacity: 1;
+   }
+   #menuLarge>section>ul>li>a{
+    padding:10px 15px;
+    color:inherit;
+    font-size:17px;
+    font-weight: 500;
+   }
+   /* end of #menuLarge ***************************************  */
+   /* *******************************************************  */
+   #mybanner{
+    display: flex;
+    justify-content: space-between;
+   }
+  
+    /* شروع متن های معرفی هیدر  */
+    #mybanner>.text-infor{
+        position: static;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        }
+    .text-infor-ALL{
+        margin-top:100px;
+        width: 100%;
+        /* background-color:purple; */
+        min-height:100px;
+    }
+    .text-infor1>span{
+        text-align: left;
+    }
+    .text-infor1>h2{
+        font-size:5vw;
+        text-align: left;
+        font-weight:800;
+    }
+    /* ختم متن های معرفی هیدر  */
+    /* start text Textabout  */
+   
+    /* end of text Textabout  */
+    .mybanner-imgs>figure{
+        width: 90%;
+        height: 600px;
+    }
+    .mybanner-imgs>figure>img{
+        width: 100%;
+        height: 100%;
+    }
+    /* ختم عکس های بنر من  */
+    /* ******************************************** */
+    /* ******************************************** */
+     /* شروع قسمت رزومه  */
+     #resume>h2{
+        font-size:2rem;
+        text-shadow:1px 1px gray,2px 2px gray,3px 3px gray,4px 4px gray,5px 5px gray,7px 7px gray,8px 8px gray,9px 8px gray,10px 10px gray;
+    }
+    /* ختم محل رزومه در حالت گوشی  */
+    /* شروع قسمت services */
+    #services>h2{
+        left:calc(50% - 120px); 
+        transform:translateY(-5px); 
+        font-size:4rem;
+    }
+    /* ختم قسمت services */
+        /* شروع قسمت مهارت ها Skills  */
+       
+        /* ختم قسمت مهارت ها skills  */
+
+/* ===== #Cv ====  */
+.imgCvs>figure{
+    width: 50%;
+    height: 100%;
+}
+/* =====end of #Cv ====  */
+
+/* ====================== #accordion======================  */
+.content,
+.player
+{
+    /* border:2px solid white; */
+    height: 100%;
+}
+.content{
+    width: 40%;
+}
+.player{
+    width: 60%;
+}
+/* ======================END #accordion======================  */
+}
+
+
+
+
+
+
+
+@media screen and (min-width:1200px) {
+    /* XL  */
+    /* شروع متن های معرفی هیدر  */
+    .text-infor1>h2{
+        font-size:5vw;
+        text-align: left;
+        font-weight:700;
+    }
+   /* start text Textabout  */
+   .text-about>h3{
+    transform:translate(10px , 30px)
+   }
+    /* end of text Textabout  */
+
+
+    /* ختم متن های معرفی هیدر  */
+    .mybanner-imgs>figure{
+        width: 80%;
+        height: 645px;
+    }
+
+
+/* ====================== #accordion======================  */
+
+#accordion>.row{
+        width:60%;
+}
+
+/* ======================END #accordion======================  */
+}
+
+
+
+
+@media screen and (min-width:1400px) {
+    /* XXL  */
+    /* شروع توضیحات متن درباره من  */
+    .text-about>h2{
+        font-size:5vw;
+        left:0;
+    }
+    .text-about>h3{
+        font-size:2vw;
+        left:0;
+        transform:translate(10px,15px);
+    }
+    .text-about>p{
+        width:70%;
+    }
+    /* ختم محل توضحیات متن های درباره ما  */
+    /* *********************************************** */
+    /* *********************************************** */
+    /* شروع قسمت روزمه  */
+  
+    /* ختم محل رزومه در حالت گوشی  */
+    /* شروع قسمت services */
+    #services>h2{
+        font-size:6rem;
+    }
+    #services>h3{
+        font-size:3.6rem;
+        transform:translateY(-100px);
+    }
+    /* ختم قسمت services */
+     /* شروع قسمت مهارت ها Skills  */
+     #skills>h2{
+        font-size:6rem;
+    }
+    #skills>h3{
+        font-size:3.6rem;
+        transform:translateY(-100px);
+    }
+    /* ختم قسمت مهارت ها skills  */
+    /* شروع قسمت پروژه های من  */
+    #Cv>h2{
+        font-size:6rem;
+    }
+    #Cv>h3{
+        font-size:3rem;
+        transform:translateY(-90px);
+    }
+    /* ختم قسمت پروژه های من  */
+    /* شروع درباره من  */
+    #contact>h3{
+        font-size:4rem;
+    }
+    #contact>h2{
+        left:calc(50% - 330px);
+        font-size:10rem;
+        transform:translateY(-50px);
+    } 
+    /* ختم درباره من  */
+}
+/* icon-college
+icon-graduation-cap */
+
+
+
+
+
+
